@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css"> 
+    </head>
+    <body class="site">
+        <!-- Ваш код -->
+        <header>
+            <div class="layout-center-wrapper">
+                <ul class="top-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="#"  class="active">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="account-menu">
+                    <a class="account-menu-enter account-menu-enter-disabled icon-login" href="#">Вход</a>
+                </div>
+            </div>
+        </header>
+       <main>
+        <div class="layout-center-wrapper">
+            <div class="row page-title">
+                <h1>Barbershop Borodinski - магазин</h1>       
+                <p class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Магазин</a>
+                    <span >Средства для ухода</span>
+                </p>    
+            </div>
+            
+            <div class="row inner-content catalog-content">
+                <div class="column column3">
+                    <div class="producers-box">
+                        <h2>Производители</h2>
+                       <!-- ul>(li>a.producers-check)*6-->
+                       <ul class="producers-check">
+                           <li><a href="#" class="active">Baxter of California</a></li>
+                           <li><a href="#">Mr Natty</a></li>
+                           <li><a href="#" class="active">Suavecito</a></li>
+                           <li><a href="#">Malin+Goetz</a></li>
+                           <li><a href="#">Murray's</a></li>
+                           <li><a href="#" class="active">American crew</a></li>
+                       </ul>
+                    </div>
+                    <div class="groups-box">
+                        <h2>Группы товаров</h2>
+                        <ul class="groups">
+                           <li><a href="#" class="active">Бритвенные принадлежности</a></li>
+                           <li><a href="#">Средства по уходу</a></li>
+                           <li><a href="#">Аксессуары</a></li>
+                       </ul>
+                        <!-- (label>input:radio)*3 -->
+                       <!-- <form action="/echo" method="post">
+                            <label for="radio1"><input type="radio" name="group" id="radio1" value="razor" checked>Бритвенные принадлежности</label> <br>
+                            <label for="radio2"><input type="radio" name="group" id="radio2" value="care">Средства по уходу</label><br>
+                            <label for="radio3"><input type="radio" name="group" id="radio3" value="accessories">Аксессуары</label><br>
+                        </form>    -->
+                    </div>
+                </div>
+                <div class="column column9">
+               <!-- .products>(.product>(.product-box-img>img.product-img+.product-info>a.product-info{i})+.product-title{Набор}+(.product-box-buy>.product-price{0 руб.}+.product-buy>a.cart-enter{Купить}))*6 -->
+                   <div class="products">
+                       <div class="product">
+                           <div class="product-img"><img src="img/img-1.png" alt=""></div>
+                           <div class="product-title">Набор для путешествий </div>
+                           <div class="product-brand">Baxter of California</div>
+                           <div class="product-buy">  
+                               <div class="price">2900 руб.</div>
+                               <div ><a href="" class="btn btn-black">Купить</a></div>
+                           </div>
+                       </div>
+                       <div class="product">
+                           <div class="product-img"><img src="img/img-2.png" alt=""></div>
+                           
+                               <span class="product-title">Увлажняющий кондиционер</span><br>
+                               <span class="product-brand">Baxter of California</span>
+                           <div class="product-buy">   
+                               <div class="price">2900 руб.</div>
+                               <div ><a href="" class="btn btn-black">Купить</a></div>
+
+                           </div>
+                       </div>
+                       <div class="product">
+                           <div class="product-img"><img src="img/img-3.png" alt=""></div>
+                           <span class="product-title">Гель для волос</span><br>
+                           <span class="product-brand">Sauvecito</span>
+                           <div class="product-buy">
+                               <div class="price">290 руб.</div>
+                               <div ><a href="" class="btn btn-black">Купить</a></div>
+                           </div>
+
+                       </div>
+                       <div class="product">
+                           <div class="product-img"><img src="img/img-4.png" alt=""></div>
+                           <span class="product-title">Гдина для волос</span><br>
+                           <span class="product-brand">American crew</span>
+                           <div class="product-buy">
+                               <div class="price">500 руб.</div>
+                               <div ><a href="" class="btn btn-black">Купить</a></div>
+                           </div>
+
+                       </div>
+                       <div class="product">
+                           <div class="product-img"><img src="img/img-5.png" alt=""></div>
+                           <span class="product-title">Гель для бритья</span><br>
+                           <span class="product-brand">American Crew</span>
+                           <div class="product-buy">
+                               <div class="price">300 руб.</div>
+                               <div ><a href="" class="btn btn-black">Купить</a></div>
+                           </div>
+                       </div>
+                       <div class="product">
+                           <div class="product-img"><img src="img/img-6.png" alt=""></div>
+                           
+                           <span class="product-title">Набор для бритья</span><br>
+                           <span class="product-brand">Baxter of California</span>
+                           <div class="product-buy">
+                               <div class="price">3900 руб.</div>
+                               <div ><a href="" class="btn btn-black">Купить</a></div>
+                           </div>
+                   </div>
+                   <div class="pagination">
+                       <ul>
+                           <li><a href="#">1</a></li>
+                           <li><a href="#" class="active">2</a></li>
+                           <li><a href="#">3</a></li>
+                           <li><a href="#">4</a></li>
+                       </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+        </main> 
+        
+        <footer>
+            <div class="layout-center-wrapper">
+                <div class="column column-1-3 contacts-address">
+                    <span><strong>Barbershop «Borodinski»</strong><br>
+                        Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>
+                        Телефон: +7 (495) 666-02-666
+                    </span>    
+                </div>
+                <div class="column column-1-3 social-buttons">
+                    <span>Давайте дружить!</span><br>
+                    <ul class="social-box">
+                      <li><a href="#" class="icon-vkontakte"></a></li>    
+                      <li><a href="#" class="icon-facebook"></a></li>
+                      <li><a href="#" class="icon-instagramm"></a></li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="column column-1-3 copyright">
+                    <div class="copyright-box">
+                        Дизайн сайта:<br><a class="btn btn-black" href="http://glukhanko.ru/">glukhanko.ru</a>
+                    </div>    
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
