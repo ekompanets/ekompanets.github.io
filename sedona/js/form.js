@@ -3,7 +3,7 @@
     'use strict';
  
     var file     = 'img/symbol/_all-svg-icons.svg',
-        revision = 2;
+        revision = 4;
  
     if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
         return true;
