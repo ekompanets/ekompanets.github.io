@@ -1,0 +1,107 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-close {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -119px;
+  width: 32px;
+  height: 32px;
+}
+.icon-combine {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -187px;
+  width: 113px;
+  height: 52px;
+}
+.icon-coros {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -292px;
+  width: 100px;
+  height: 56px;
+}
+.icon-facebook {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -87px;
+  width: 32px;
+  height: 32px;
+}
+.icon-flag--en {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -11px;
+  width: 16px;
+  height: 11px;
+}
+.icon-flag--pt {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -22px;
+  width: 16px;
+  height: 11px;
+}
+.icon-flag--ro {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -33px;
+  width: 16px;
+  height: 11px;
+}
+.icon-flag--ru {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -44px;
+  width: 16px;
+  height: 11px;
+}
+.icon-flag--ua {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 16px;
+  height: 11px;
+}
+.icon-liktravy {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -151px;
+  width: 159px;
+  height: 36px;
+}
+.icon-logo {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -348px;
+  width: 143px;
+  height: 59px;
+}
+.icon-menu {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -55px;
+  width: 44px;
+  height: 32px;
+}
+.icon-seeder {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -407px;
+  width: 111px;
+  height: 63px;
+}
+.icon-sprayer {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -470px;
+  width: 135px;
+  height: 64px;
+}
+.icon-tractor {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -534px;
+  width: 97px;
+  height: 64px;
+}
+.icon-viola {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -239px;
+  width: 110px;
+  height: 53px;
+}

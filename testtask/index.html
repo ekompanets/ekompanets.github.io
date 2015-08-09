@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/sprites.css">
+    <script src="js/lib/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="page-header">
+    <!-- Центровщик -->
+    <div class="center-wrapper">
+      <div class="page-header__container">
+
+        <div class="logo">
+          <!-- Логотип -->
+          <a href="#" class="logo__link">Зоря
+            <i class="icon-logo"></i>
+          </a>
+          <!-- Переключатель мобильного меню -->
+          <a href="#" class="toggle ">
+              <i class="icon-menu"></i>
+            </a>
+            <!-- Переключатель мобильного меню -->
+          <a href="#" class="toggle-close">
+              <i class="icon-close"></i>
+            </a>
+        </div>
+        <!-- Навигация -->
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <!-- Элемент ТОЛЬКО расширенного меню -->
+            <li class="main-nav__item  main-nav__item--long ">
+              <a class="main-nav__link main-nav__active" href="">Продукти
+              </a>
+              <!-- Подменю -->
+              <ul class="main-nav__sub-menu">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--long">
+              <a class="main-nav__link" href=""  >Про компанію</a>
+              <ul class="main-nav__sub-menu">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <!-- Элемент ТОЛЬКО сокращенного меню  -->
+            <li class="main-nav__item main-nav__item--short">
+              <a class="main-nav__link main-nav__active" href="">Клієнту
+              </a>
+              <ul class="main-nav__sub-menu">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Інвестору</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--long">
+              <a class="main-nav__link" href="">Відгуки</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--long">
+              <a class="main-nav__link" href="">Соціальні ініціативи</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--short">
+              <a class="main-nav__link" href="">Про нас</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+            <!-- Постоянный элемент меню  -->
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Контакти</a>
+              <ul class="main-nav__sub-menu ">
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+                <li><a href="">Підпункт1</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- Выбор языка -->
+        <div class="lang">
+          <div class="lang__change">
+            <a href="" class="lang__link lang__link--current">english
+                <i class="icon-flag--en"></i></a>
+            <ul class="lang__list">
+              <li class="lang__item"><a href="" class="lang__link lang__link--pt">Portugal
+                <i class="icon-flag--pt"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ro">Romania
+                <i class="icon-flag--ro"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ru">Russia
+                <i class="icon-flag--ru"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ua">Ukraine
+                <i class="icon-flag--ua"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--pt">Portugal
+                <i class="icon-flag--pt"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ro">Romania
+                <i class="icon-flag--ro"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ru">Russia
+                <i class="icon-flag--ru"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ua">Ukraine
+                <i class="icon-flag--ua"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--pt">Portugal
+                <i class="icon-flag--pt"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ro">Romania
+                <i class="icon-flag--ro"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ru">Russia
+                <i class="icon-flag--ru"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ua">Ukraine
+                <i class="icon-flag--ua"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--pt">Portugal
+                <i class="icon-flag--pt"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ro">Romania
+                <i class="icon-flag--ro"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ru">Russia
+                <i class="icon-flag--ru"></i></a></li>
+              <li class="lang__item"><a href="" class="lang__link lang__link--ua">Ukraine
+                <i class="icon-flag--ua"></i></a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Конец шапки -->
+  <!-- Контентная область -->
+  <main>
+    <!-- Промо блок с большим фоновым рисунком -->
+    <div class="promo">
+      <div class="center-wrapper">
+        <h1 class="promo__title">Інвесторам</h1>
+        <p class="promo__text">Вражаючі результати, яких агро-компанія “Зоря” досягла за досить невеликий час, спонукають керівництво компанії до нових звершень. Компанія націлена не зупинятися на своїх досягненнях, а цілеспрямовано розвиватися у різних напрямках.<br> 
+          Безумовно, компанії "Зоря" можна довіряти. Компанія є спроможним та надійним гравцем на ринку, її показники динамічно ростуть, незважаючи на досить важку та нестабільну в країні ситуацію. <br>
+          Питання, чи варто інвестувати в компанію, лежить на поверхні. Цілком варто! Цим ви не тільки допоможете стрімкому зростанню компанії, але прицьому отримаєте циск, як інвестора. Результатом є можливість укладення більш вигідних контрактів і як наслідок, заслужене визнання іншими учасниками ринку.</p>
+      </div>
+    </div>
+    <div class="center-wrapper">
+      <!-- Список с описанием клиентов -->
+      <div class="clients">
+        <p class="clients__title">Головними клієнтами є:</p>
+        <ul class="clients__list">
+          <li class="clients__item">всі переробні компанії в Україні (в тому числі найбільші українські компанії "Ліктрави" та "Віола"</li>
+          <li class="clients__item">переважна більшість імпортерів льону в Європі та Азії</li>
+        </ul>       
+      </div>
+      <!-- Диаграммы -->
+      <section class="charts">
+        <!-- Диаграмма Оборот -->
+        <div class="chart chart--return">
+          <h2 class="chart__title">Оборот</h2>
+          <div class="chart__img">
+            <ul class="chart__y-list">
+              <li class="chart__y-item">3</li>
+              <li class="chart__y-item">2</li>
+              <li class="chart__y-item">1</li>
+              <li class="chart__y-item">0</li>
+            </ul>
+            <div class="chart__inner">
+              <ul class="chart__x-list">
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay="0s" data-number="1,035 млн грн" data-year="2013 год">2013 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".2s" data-number="2,24 млн грн" data-year="2014 год">2014 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".4s" data-number="3,18 млн грн" data-year="6 месяцев 2015">6 месяцев 2015</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Диаграмма Кол-во покупателей -->
+        <div class="chart chart--buyers">
+          <h2 class="chart__title">Кількість покупців</h2>
+          <div class="chart__img">
+            <ul class="chart__y-list">
+              <li class="chart__y-item">70</li>
+              <li class="chart__y-item">50</li>
+              <li class="chart__y-item">30</li>
+              <li class="chart__y-item">10</li>
+            </ul>
+            <div class="chart__inner">
+              <ul class="chart__x-list">
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay="0s" data-number="13 покупців" data-year="2013 год">2013 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".2s" data-number="18 покупців" data-year="2014 год">2014 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".4s" data-number="72 покупців" data-year="2015 год">2015 год</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Диаграмма Банк земли -->
+        <div class="chart chart--terra">
+          <h2 class="chart__title">Банк землі, яка обробляється (%)</h2>
+          <div class="chart__img">
+            <ul class="chart__y-list">
+              <li class="chart__y-item">100</li>
+              <li class="chart__y-item">70</li>
+              <li class="chart__y-item">40</li>
+              <li class="chart__y-item">10</li>
+            </ul>
+            <div class="chart__inner">
+              <ul class="chart__x-list">
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay="0s" data-number="15%" data-year="2013 год">2013 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".2s" data-number="60%" data-year="2014 год">2014 год</li>
+                <li class="chart__x-item animation__scaleInUp wow"  data-wow-offset="10" data-wow-delay=".4s" data-number="81%" data-year="2015 год">2015 год</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Парк техники -->
+      <div class="technics">
+        <h2 class="technics__title">Парк техніки</h2>
+        <ul class="technics__list">
+          <li class="technics__item  animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0s"><a  href="#">7 тракторів
+              <i class="icon-tractor"></i>
+            </a></li>
+          <li class="technics__item  animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0.2s">
+            <a   href="#">1 комбайн
+              <i class="icon-combine"></i>
+            </a>
+          </li>
+          <li class="technics__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0.4s"><a  href="#">2 сіялки
+              <i class="icon-seeder"></i>
+            </a></li>
+          <li class="technics__item  animation__slideInDown wow" data-wow-offset="100" data-wow-delay=".8s"><a  href="#">2 оприскувачі
+              <i class="icon-sprayer"></i>
+            </a></li>
+        </ul>
+      </div>
+    <!-- Партнеры -->
+      <div class="partners">
+        <h2 class="partners__title">Ключові партнери</h2>
+        <ul class="partners__list">
+          <li class="partners__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay="0s"><a  href="#">Ліктрави
+              <i class="icon-liktravy"></i>
+            </a></li>
+          <li class="partners__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay=".2s"><a href="#">Віола
+              <i class="icon-viola"></i>
+            </a></li>
+          <li class="partners__item animation__slideInDown wow" data-wow-offset="100" data-wow-delay=".4s"><a href="#">Coros Trade
+              <i class="icon-coros"></i>
+            </a></li>
+        </ul>
+      </div>
+      <!-- Итог в конце страницы -->
+       <h2 class="resume">Компанія "Зоря" очолює  <br>Українську Асоціацію Льонарів</h2>
+    </div>
+    
+  </main>
+  <!-- Конец контентной области -->
+  <!-- Подвал -->
+  <footer class="page-footer">
+    <!-- Центровщик -->
+    <div class="center-wrapper">
+      <!-- Блок кнопок социальных сетей -->
+      <div class="social-btns">
+        <a href="" class="btn--social animation__pulse">Facebook
+              <i class="icon-facebook"></i>
+            </a>
+      </div>
+      <div class="page-footer__copyright">(C) 2015 Зоря - Агро</div>
+    </div>
+  </footer>
+  <!-- Конец подвала -->
+    <script src="js/script.min.js"></script>
+</body>
+</html>
