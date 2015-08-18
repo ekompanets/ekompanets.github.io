@@ -1,0 +1,60 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-mobile:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -106px;
+  width: 30px;
+  height: 43px;
+}
+.icon-mobile:hover:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -149px;
+  width: 30px;
+  height: 43px;
+}
+.icon-signal:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -192px;
+  width: 46px;
+  height: 43px;
+}
+.icon-signal:hover:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -235px;
+  width: 46px;
+  height: 43px;
+}
+.icon-tel:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 27px;
+  height: 26px;
+}
+.icon-tools:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -26px;
+  width: 42px;
+  height: 40px;
+}
+.icon-tools:hover:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -66px;
+  width: 42px;
+  height: 40px;
+}
