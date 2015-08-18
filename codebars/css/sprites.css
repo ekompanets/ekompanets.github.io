@@ -9,39 +9,52 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.icon-icon-tel {
+.icon-mobile:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -106px;
+  width: 30px;
+  height: 43px;
+}
+.icon-mobile:hover:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -149px;
+  width: 30px;
+  height: 43px;
+}
+.icon-signal:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -192px;
+  width: 46px;
+  height: 43px;
+}
+.icon-signal:hover:before {
+  content: "";
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -235px;
+  width: 46px;
+  height: 43px;
+}
+.icon-tel:before {
+  content: "";
   background-image: url(../img/spritesheet.png);
   background-position: 0px 0px;
   width: 27px;
   height: 26px;
 }
-.icon-logo {
+.icon-tools:before {
+  content: "";
   background-image: url(../img/spritesheet.png);
   background-position: 0px -26px;
-  width: 115px;
-  height: 145px;
+  width: 42px;
+  height: 40px;
 }
-.icon-slide1-1 {
+.icon-tools:hover:before {
+  content: "";
   background-image: url(../img/spritesheet.png);
-  background-position: 0px -629px;
-  width: 1600px;
-  height: 233px;
-}
-.icon-slide1 {
-  background-image: url(../img/spritesheet.png);
-  background-position: 0px -171px;
-  width: 863px;
-  height: 226px;
-}
-.icon-slide2-2 {
-  background-image: url(../img/spritesheet.png);
-  background-position: 0px -397px;
-  width: 1600px;
-  height: 232px;
-}
-.icon-slide2 {
-  background-image: url(../img/spritesheet.png);
-  background-position: 0px -862px;
-  width: 918px;
-  height: 239px;
+  background-position: 0px -66px;
+  width: 42px;
+  height: 40px;
 }

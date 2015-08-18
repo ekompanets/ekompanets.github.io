@@ -1,44 +1,44 @@
 (function(){
-  //   меню
+  var link = document.querySelector('.call-link');
+  var popup = document.querySelector('.call-popup');
+  var close = popup.querySelector('.call-popup-close');
+  var form = popup.querySelector('form');
+  var login = form.querySelector('.login-field');
+  var password = form.querySelector('.password-field');
+  var storage = localStorage.getItem('login');
 
-  var menuElements=document.querySelectorAll(".main-nav__item");
-  for (var i=0; i<menuElements.length; i++) {
-    OpenSubMenu(menuElements[i])
-  }
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    popup.classList.add('call-popup-show');
+    if (storage) {
+      login.value = storage;
+      password.focus();
+    } else {
+      login.focus();
+    }
+  }, false);
 
-  function OpenSubMenu(iMenu) {
-    iMenu.addEventListener("mouseover", function(event) {
-        event.preventDefault();
-        iMenu.classList.add("show");
-    })
+  close.addEventListener('click', function(event) {
+    event.preventDefault();
+    popup.classList.remove('call-popup-show');
+  }, false);
 
-    iMenu.addEventListener("mouseout", function(event) {
+  form.addEventListener('submit', function(event) {
+    if (!login.value || !password.value) {
       event.preventDefault();
-      if (iMenu.classList.contains("show")) {
-        iMenu.classList.remove("show");
-      };
-  })
-  }
+      popup.classList.add('call-popup-error');
+    } else {
+      localStorage.setItem('call', login.value);
+    }
+  }, false);
+
+  window.addEventListener('keydown', function(event) {
+    if (event.keyCode == 27 && popup.classList.contains('login-popup-show')) {
+      popup.classList.remove('login-popup-show');
+    }
+  }, false);
 
 
-  //  --  выбор языка
-
-  var langElement=document.querySelector(".lang__change");
-    OpenLangList(langElement); 
-
-  function OpenLangList(iLang) {
-    iLang.addEventListener("mouseover", function(event) {
-      event.preventDefault();
-      iLang.classList.add("lang__show");
-    })
-
-    iLang.addEventListener("mouseout", function(event) {
-      event.preventDefault();
-      if (iLang.classList.contains("lang__show")) {
-        iLang.classList.remove("lang__show");
-      };
-  })
-  }
 
   //  мобильное меню
 

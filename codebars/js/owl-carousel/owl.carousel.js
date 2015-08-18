@@ -343,6 +343,7 @@ if (typeof Object.create !== "function") {
         calculateWidth : function () {
             var base = this;
             base.itemWidth = Math.round(base.$elem.width() / base.options.items);
+            
         },
 
         max : function () {

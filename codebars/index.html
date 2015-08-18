@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <title>BARS</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/icomoon.css">    
+  <link rel="stylesheet" href="css/sprites.css">
+
   <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
  
 <!-- Default Theme -->
 <link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,300,300italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/owl-carousel/owl.carousel.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,300,300italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/owl-carousel/owl.carousel.js"></script>
 
   <!-- <link rel="stylesheet" href="css/sprites.css"> -->
     <!-- <script src="js/lib/wow.min.js"></script>
@@ -55,7 +58,7 @@
           <div class="contact">
             <p class="contact__phone">+7 (928) 567-34-87</p>
             <p class="contact__text">Звоните в Пн-Пт, с 10:00 до 18:00</p>
-            <a href="#" class="btn btn--call">Заказать звонок</a>
+            <a href="#" class="btn btn--call call-link">Заказать звонок</a>
           </div> 
         </div>        
       </div>
@@ -102,36 +105,69 @@
             <input type="radio" name="tabs-0" checked="checked" id="tabs-0-0" />
             <label for="tabs-0-0">Физическая защита объектов</label>
             <div>
-              <ul class="page__services-list">
-                <li class="page__services-item"><a href="">Организация и контроль пропускного режима</a></li>
-                <li class="page__services-item"><a href="">Приём под охрану ваших объектов</a></li>
-                <li class="page__services-item"><a href="">Патрулирование вверенной нам территории</a></li>
-                <li class="page__services-item"><a href="">Контроль и принятие мер по сохранности вашего имущества</a></li>
-                <li class="page__services-item"><a href="">Защита от проникновения посторонних лиц на объекты вашего бизнеса</a></li>
-                <li class="page__services-item"><a href="">Защита от проникновения посторонних лиц на объекты вашего бизнеса</a></li>
-                <li class="page__services-item"><a href="">Сбор и своевременное доведение до вашего сведения информации о нестандартных ситуациях</a></li>
-                <li class="page__services-item"><a href="">Контроль за соблюдением правил и требований распорядка рабочего дня, установленных в вашей компании</a></li>
-              </ul>
+              <div class="page__services-wrapper">
+                <div class="page__services-left">
+                  <ul class="page__services-list">
+                    <li class="page__services-item icon-control"><a  class="" href="">Организация и контроль пропускного режима
+                    </a></li>
+                    <li class="page__services-item icon-car"><a class="" href="">Патрулирование вверенной нам территории
+                  </a></li>
+                    <li class="page__services-item icon-guard"><a class="" href="">Защита от проникновения посторонних лиц на объекты вашего бизнеса
+                  </a></li>
+                    <li class="page__services-item icon-info"><a class="" href="">Сбор и своевременное доведение до вашего сведения информации о нестандартных ситуациях
+                  </a></li>
+                  </ul>
+                </div>
+                
+                <div class="page__services-right">
+                  <ul class="page__services-list">
+                    <li class="page__services-item icon-object"><a class="" href="">Приём под охрану ваших объектов
+                  </a></li>
+                    <li class="page__services-item icon-house"><a class="" href="">Контроль и принятие мер по сохранности вашего имущества
+                    <i></i>
+                  </a></li>
+                    <li class="page__services-item icon-protect"><a class="" href="">Защита от противоправных действий со стороны третьих
+                  </a></li>
+                    <li class="page__services-item icon-rule"><a class="" href="">Контроль за соблюдением правил и требований распорядка рабочего дня, установленных в вашей компании
+                   <!--  <i class="icon-rule"></i> -->
+                  </a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </li>
           <li>
-            <input type="radio" name="tabs-0" checked="checked" id="tabs-0-1" />
+            <input type="radio" name="tabs-0"  id="tabs-0-1" />
             <label for="tabs-0-1">Автоматизированная защита объектов</label>
             <div>
-              <ul class="page__services-list">
-                <li class="page__services-item"><a href="">
-                  Ваша защита посредством выезда Групп быстрого реагирования и сотрудников МЧС, в случае поступления сигнала тревоги при помощи:
-                  <ul>
-                     <li>- тревожной кнопки</li>
-                     <li>- охранной сигнализации</li>
-                     <li>- пожарной сигнализации</li>
-                     <li>- систем видеонаблюдения</li>
-                   </ul> 
-                </a></li>
-                <li class="page__services-item"><a href=""></a></li>
-                <li class="page__services-item"><a href=""></a></li>
-                
-              </ul>
+              <div class="page__services-wrapper">
+                <div class="page__services-left">
+                  <ul class="page__services-list">
+                    <li class="page__services-item icon-signal"><a href="">
+                      Ваша защита посредством выезда Групп быстрого реагирования и сотрудников МЧС, в случае поступления сигнала тревоги при помощи:                    
+                      <ul>
+                       <li>тревожной кнопки</li>
+                       <li>охранной сигнализации</li>
+                       <li>пожарной сигнализации</li>
+                       <li>систем видеонаблюдения</li>
+                      </ul> 
+                    </a>
+                    
+                    </li>
+                  </ul>
+                </div>
+                <div class="page__services-right">
+                  <ul class="page__services-list">
+                    <li class="page__services-item icon-mobile"><a href="">Контроль снятия и постановки объекта на охрану, а также поступления сигнала тревоги на ваш мобильный телефон
+                      <i class=""></i>
+                    </a></li>
+                    <li class="page__services-item icon-tools"><a href=""> Проектирование, монтаж и техническое обслуживание монтажного оборудования
+                      <i class=""></i>
+                    </a></li>
+                    
+                  </ul>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
@@ -139,28 +175,30 @@
       </div>
 
       <div class="page__news news">
-        <ul class="news__list">
-          <li class="news__item news__item--1">
-            <a href="" class="news__item-link"><h3 class="news__item-title">Сбор и своевременное доведение до вашего  сведения информации</h3></a>
-            <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности. </p>
-            <a href="" class="news__item-link">Подробнее</a>
-          </li>
-          <li class="news__item news__item--2">
-            <a href="" class="news__item-link"><h3 class="news__item-title">Физическая охрана объектов  на стационарных постах</h3></a>
-            <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности.</p>
-            <a href="" class="news__item-link">Подробнее</a>
-          </li>
-          <li class="news__item news__item--3">
-            <a href="" class="news__item-link"><h3 class="news__item-title">Патрулирование вверенной нам территории</h3></a>
-            <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности.</p>
-            <a href="" class="news__item-link">Подробнее</a>
-          </li>
-          <li class="news__item news__item--4">
-            <a href="" class="news__item-link"><h3 class="news__item-title">Приём под охрану ваших объектов</h3></a>
-            <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности.</p>
-            <a href="" class="news__item-link">Подробнее</a>
-          </li>
-        </ul>
+        <div class="news-wrapper">
+          <ul class="news__list">
+            <li class="news__item news__item--1">
+              <a href="" class="news__item-link"><h3 class="news__item-title">Сбор и своевременное доведение до вашего  сведения информации</h3></a>
+              <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности. </p>
+              <a href="" class="news__item-link">Подробнее</a>
+            </li>
+            <li class="news__item news__item--2">
+              <a href="" class="news__item-link"><h3 class="news__item-title">Физическая охрана объектов  на стационарных постах</h3></a>
+              <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности.</p>
+              <a href="" class="news__item-link">Подробнее</a>
+            </li>
+            <li class="news__item news__item--3">
+              <a href="" class="news__item-link"><h3 class="news__item-title">Патрулирование вверенной нам территории</h3></a>
+              <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности.</p>
+              <a href="" class="news__item-link">Подробнее</a>
+            </li>
+            <li class="news__item news__item--4">
+              <a href="" class="news__item-link"><h3 class="news__item-title">Приём под охрану ваших объектов</h3></a>
+              <p class="news__item-text">Мы работаем на рынке охранных услуг с 2002 года и накопили большой опыт охраны крупных объектов, а также в проектировании, установке и обслуживании комплексных охранных систем любой сложности.</p>
+              <a href="" class="news__item-link">Подробнее</a>
+            </li>
+          </ul>
+        </div>
         <div class="btn-wrapper">
           <a href="" class="btn btn--news">смотреть все новости</a>
         </div>
@@ -198,6 +236,19 @@
         </ul>
       </nav> </div>
   </footer>
+
+  <div class="call-popup">
+    <a href="#" class="call-popup-close">✕</a>
+    <p >Заказать звонок</p>
+    <form class="call-form" action="/auth" method="post">
+      <label class="call-label" for="name">Ваше имя:</label>
+      <input class="call-field name-field" type="text" name="name" id="name">
+      <label class="call-label" for="name">Телефон:</label>
+      <input class="call-field phone-field" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" name="phone" id="phone">      
+      <label class="call-label">Сообщение:</label> <textarea></textarea>       
+      <input type="submit" class="btn btn--call btn--form" value="Отправить">
+    </form>
+  </div>
 
     <script src="js/script.min.js"></script>
     <script src="js/carousel.js"></script>
