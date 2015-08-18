@@ -428,11 +428,11 @@ dd {
 */
 
 .owl-theme .owl-controls {
-	position: absolute;
-	margin-top: -100px;
-	margin-left: -80px;
-	text-align: center;
-	left: 50%;	
+	position: absolute !important;
+	margin-top: -100px !important;
+	margin-left: -80px !important;
+	text-align: center !important;
+	left: 50% !important;	
 }
 
 /* Styling Next and Prev buttons */
@@ -471,8 +471,8 @@ dd {
 
 .owl-theme .owl-controls .owl-page span {
 	display: block;
-	width: 18px;
-	height: 18px;
+	width: 18px  !important;
+	height: 18px !important;
 	margin: 5px 5px;
 	filter: alpha(opacity=50); /*IE7 fix*/
 	opacity: 0.5;
@@ -589,13 +589,11 @@ dd {
 
 #owl-demo .owl-item:nth-child(1) .item {
 	background-color: #1c1d22;
-	/*background:  url(../img/slide1-1.png) no-repeat center;*/
 	width: 100%;
 	height: 230px;
 	
 }	
 #owl-demo .owl-item:nth-child(1) .item-in {
-	/*background: linear-gradient(to right #1c1d22 0%, #5b5b5d 50%, #1c1d22 100%), url(../img/slide1-1.png) no-repeat center;*/
 	background:  url(../img/slide1-1.png) no-repeat center;
 	width: 100%;
 	height: 230px;
@@ -604,13 +602,11 @@ dd {
 
 #owl-demo .owl-item:nth-child(2) .item {
 	background-color: #444446;
-	/*background: url(../img/slide2-2.png) no-repeat center;*/
 	width: 100%;
 	height: 230px;
 	
 }
 #owl-demo .owl-item:nth-child(2) .item-in {
-	/*background: linear-gradient(to right #1c1d22 0%, #5b5b5d 50%, #1c1d22 100%), url(../img/slide1-1.png) no-repeat center;*/
 	background: url(../img/slide2-2.png) no-repeat center;
 	width: 100%;
 	height: 230px;
