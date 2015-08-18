@@ -234,9 +234,9 @@
     <p >Заказать звонок</p>
     <form class="call-form" action="/auth" method="post">
       <label class="call-label" for="name">Ваше имя:</label>
-      <input class="call-field name-field" type="text" name="name" id="name">
+      <input class="call-field name-field" type="text" name="name" id="name" required>
       <label class="call-label" for="name">Телефон:</label>
-      <input class="call-field phone-field" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" name="phone" id="phone">      
+      <input class="call-field phone-field" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" name="phone" id="phone" required>      
       <label class="call-label">Сообщение:</label> <textarea></textarea>       
       <input type="submit" class="btn btn--call btn--form" value="Отправить">
     </form>
