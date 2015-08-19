@@ -895,7 +895,7 @@ dd {
 .tabs,
 .tabs input[type="radio"]:checked + label {
 	position: relative;
-	top: 1px;
+	top: 2px;
 }
 
 .tabs li,
