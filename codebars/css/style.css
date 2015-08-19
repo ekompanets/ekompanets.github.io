@@ -993,6 +993,11 @@ dd {
 	padding: 0 9px;
 }
 
+.page-footer .main-nav__link:hover {
+	background-color: #31343b;
+	color: gray;
+}
+
 .btn {
 	margin: 0 auto;
 	margin-bottom: 10px;
