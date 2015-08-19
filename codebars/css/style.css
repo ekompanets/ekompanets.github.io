@@ -203,6 +203,7 @@ dd {
 
 .logo__img {
 	float: left;
+	border: none;
 }
 
 .logo__text {
