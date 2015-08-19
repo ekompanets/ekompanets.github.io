@@ -141,16 +141,16 @@ dd {
 .main-nav__list {
 	list-style: none;
 	margin: 0 -15px;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	/*display: -webkit-flex;*/
+	/*display: -ms-flexbox;*/
+	/*display: flex;*/
+	/*-webkit-flex-wrap: wrap;*/
+	/*-ms-flex-wrap: wrap;*/
+	/*flex-wrap: wrap;*/
 }
 
 .main-nav__item {
-	display: block;
+	display: inline-block;
 	position: relative;
 	color: #000000;
 }
@@ -659,7 +659,7 @@ dd {
 
 .page__header {
 	padding-top: 26px;
-	padding-bottom: 55px;
+	padding-bottom: 52px;
 	max-width: 880px;
 }
 
