@@ -998,6 +998,10 @@ dd {
 	color: gray;
 }
 
+.page-footer .main-nav .main-nav__active {
+	background-color: #31343b;
+}
+
 .btn {
 	margin: 0 auto;
 	margin-bottom: 10px;
