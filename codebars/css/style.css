@@ -123,8 +123,8 @@ dd {
 }
 
 .header__container-logo {
-	padding-top: 20px;
-	padding-bottom: 28px;
+	padding-top: 21px;
+	padding-bottom: 26px;
 	text-align: left;
 }
 
@@ -175,7 +175,7 @@ dd {
 	/*padding-left: 0;*/
 }
 
-.main-nav a.main-nav__active {
+.main-nav .main-nav__active {
 	background-color: #202227;
 }
 
@@ -674,8 +674,12 @@ dd {
 	line-height: 1.5em;
 }
 
+.page__services {
+	/*margin-bottom: 5px;*/
+}
+
 .page__services-wrapper {
-	padding: 28px 0 !important;
+	padding: 40px 0  20px !important;
 }
 
 .page__services-left,
@@ -702,7 +706,7 @@ dd {
 	position: relative;
 	display: inline-block;
 	padding-left: 60px !important;
-	margin-bottom: 35px !important;
+	margin-bottom: 33px !important;
 	min-height: 45px;
 	font-size: 12px;
 	line-height: 2em;
@@ -766,7 +770,8 @@ dd {
 }
 
 .news {
-	margin-bottom: 45px;
+	margin-bottom: 28px;
+	padding-bottom: 20px;
 	font-size: 0;
 	border: 1px solid #d4d5d6;
 }
@@ -783,7 +788,7 @@ dd {
 	position: relative;
 	display: inline-block;
 	padding-right: 18px;
-	padding-top: 160px;
+	padding-top: 157px;
 	width: 250px;
 	text-align: left;
 	vertical-align: top;
@@ -794,7 +799,7 @@ dd {
 	display: block;
 	content: "";
 	left: 0;
-	top: 20px;
+	top: 16px;
 	width: 231px;
 	height: 130px;
 }
@@ -828,7 +833,7 @@ dd {
 .news__item-text {
 	font-size: 14px;
 	line-height: 1.4em;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 .news__item-link {
@@ -890,6 +895,7 @@ dd {
 .tabs,
 .tabs input[type="radio"]:checked + label {
 	position: relative;
+	top: 1px;
 }
 
 .tabs li,
@@ -910,6 +916,9 @@ dd {
 .tabs li > div {
 	border-top: solid 1px #ccc;
 }
+
+
+
 
 .tabs {
 	font-size: 12px;
@@ -1023,6 +1032,7 @@ dd {
 .btn--form {
 	margin-left: 103px;
 	width: 115px;
+	border: none;
 }
 
 .btn--news {
@@ -1041,15 +1051,17 @@ dd {
 }
 
 .call-popup {
-	display: none;
+	/*display: none;*/
 	position: absolute;
-	top: 30px;
+	top: 50%;
 	left: 50%;
 	width: 458px;
 	min-height: 200px;
 	padding: 25px;
 	margin-left: -230px;
+	margin-top: -162px;
 	background: white;
+	z-index: 21;
 }
 
 .call-popup p {
@@ -1332,3 +1344,21 @@ to {
 
 }
 
+.shadow {
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,1);
+	z-index: 20;
+}
+
+.call-shadow-show {
+	display: block;
+	background: rgba(0,0,0,.7);
+	-webkit-transition: .5;
+	-o-transition: .5;
+	transition: all .5;
+
+}
