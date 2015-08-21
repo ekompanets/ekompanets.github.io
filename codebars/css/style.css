@@ -426,7 +426,7 @@ dd {
 /*Content head*/
 .page__header {
 	padding-top: 26px;
-	padding-bottom: 52px;
+	padding-bottom: 60px;
 	max-width: 880px;
 }
 
@@ -472,7 +472,7 @@ dd {
 
 .tabs label {
 	margin: 0 0 -1px;
-	padding: 9px 25px;
+	padding: 9px 10px;
 	line-height: 32px;
 	color: #fff;
 	font-weight: 400;
@@ -510,11 +510,11 @@ dd {
 
 
 .page__services {
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 }
 
 .page__services-wrapper {
-	padding: 42px 0  18px !important;
+	padding: 30px 0  12px !important;
 }
 
 .page__services-left,
@@ -624,7 +624,7 @@ dd {
 	position: relative;
 	display: inline-block;
 	padding-right: 18px;
-	padding-top: 16px;
+	padding-top: 20px;
 	width: 250px;
 	text-align: left;
 	vertical-align: top;

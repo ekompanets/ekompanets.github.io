@@ -271,11 +271,11 @@
 			<p >Заказать звонок</p>
 			<form class="call-form">
 			<label class="call-label" for="name">Ваше имя:</label>
-			<input type="text" name="name" id="name" required autofocus>
+			<input type="text" class="rfield" name="name" id="name" required autofocus>
 			<label class="call-label" for="name">Телефон:</label>
-			<input type="tel" id="phone" name="phone" required>      
-			<label class="call-label">Сообщение:</label> <textarea class="msg-text" name="msg-text" id="msg"></textarea>       
-			<button type="submit" class="btn btn--call btn--form" >Отправить</button>
+			<input type="tel" class="rfield" id="phone" name="phone" required>      
+			<label class="call-label">Сообщение:</label> <textarea class="msg-text rfield" name="msg-text" id="msg"></textarea>       
+			<button type="submit" class="btn disable btn--call btn--form" >Отправить</button>
 			</form>
 		</div>
 		<!-- Popup end -->
@@ -284,7 +284,7 @@
 	
 	<script src="js/lib/jquery-2.1.4.min.js"></script>
 	<script src="js/lib/jquery.maskedinput.min.js"></script>
-	<script src="js/lib/owl.carousel.js"></script>
+	<script src="js/lib/owl.carousel.js"></script>	
 	<script src="js/script.js"></script>
 </body>
 </html>
