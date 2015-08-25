@@ -17,6 +17,9 @@ $(document).ready(function() {
 	//Open popup
 	$(".call-link").click(function(){
 		$(".modal").fadeIn(500);
+		$("form").find("input,textarea").not("[type='submit']").each(function(){
+			$(this).val('');
+		})
 	});
 
 	//Close popup by clicking on "cross" or "shadow"
