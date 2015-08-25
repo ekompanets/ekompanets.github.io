@@ -788,14 +788,20 @@ dd {
 
 
 /*Popup begin*/
-
-.shadow {
+.modal {
 	display: none;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,1);
+}
+.shadow {
+	/*display: none;*/
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
 	z-index: 20;
 	-webkit-transition: .5;
 	-o-transition: .5;
