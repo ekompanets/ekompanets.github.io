@@ -482,6 +482,39 @@ header {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.menu .msg-form-wrap {
+  display: none;
+  padding: 20px 25px;
+}
+.menu .msg-form-wrap form {
+  max-width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: 1px solid #767e86;
+}
+.menu .msg-form-wrap form input {
+  height: 30px;
+  width: 100%;
+  padding: 5px 10px;
+  background: transparent;
+  color: #fff;
+}
+.menu .msg-form-wrap form input:first-child {
+  margin-right: 10px;
+}
+.menu .msg-form-wrap form .btn {
+  display: inline-block;
+  min-width: 170px;
+  width: 100%;
+}
+.menu .msg-form-wrap form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  min-height: 60px;
+  background: transparent;
+  color: #fff;
+}
 @media screen and (max-width: 1024px) {
   .menu {
     position: fixed;
@@ -507,6 +540,11 @@ header {
         justify-content: center;
     height: 57px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu .msg-form-wrap {
+    display: block;
   }
 }
 .nav-button {
@@ -1167,6 +1205,22 @@ header {
   width: 100%;
   margin: 20px 0;
   padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  .screen--contacts .map-block form {
+    bottom: unset;
+    top: -204px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: none;
+  }
+  .screen--contacts .map-block form input {
+    height: 30px;
+  }
+  .screen--contacts .map-block form textarea {
+    margin: 10px 0 ;
+  }
 }
 @media screen and (max-width: 991px) {
   .screen--contacts {
