@@ -668,9 +668,9 @@ header {
   display: block;
   height: 100px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .onepage-pagination {
-    left: 20px;
+    left: 30px;
   }
   .onepage-pagination li a {
     width: 10px;
@@ -779,6 +779,12 @@ header {
   max-width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1400px) {
+  .screen-wrapper {
+    width: auto;
+    margin: 0 75px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .screen-wrapper {
     padding-left: 75px;
@@ -854,7 +860,7 @@ header {
   position: relative;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  padding-top: 300px;
+  padding-top: 30vh;
   background: url(../image/pic-3.png) no-repeat center;
   background-size: cover;
 }
@@ -894,7 +900,7 @@ header {
 }
 .screen--about {
   position: relative;
-  padding-top: 340px;
+  padding-top: 30vh;
 }
 .screen--about:before {
   position: absolute;
