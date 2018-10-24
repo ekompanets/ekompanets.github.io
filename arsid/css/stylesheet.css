@@ -238,6 +238,26 @@ body {
   position: relative;
   min-height: 100%;
 }
+.warning-wrapper {
+  display: none !important;
+}
+@media screen and (max-width: 767px) {
+  .screen-land .main-wrapper {
+    display: none;
+  }
+  .screen-land .warning-wrapper {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100vh;
+  }
+  .screen-land .warning-wrapper h2 {
+    color: #333;
+  }
+}
 .wrapper {
   min-width: 320px;
   max-width: 1920px;
@@ -348,7 +368,7 @@ input[type=number] {
   }
 }
 .tabs__caption li {
-  padding: 25px 10px;
+  padding: 2.5vh 10px;
   font-size: 18px;
   color: #dbdbdb;
   text-align: left;
@@ -400,12 +420,12 @@ header {
 }
 .logo {
   position: relative;
-  padding: 20px 50px 40px;
+  padding: 10px 50px 20px;
   margin-right: 90px;
 }
 .logo img {
   width: 100%;
-  max-width: 195px;
+  max-width: 185px;
 }
 @media screen and (max-width: 1400px) {
   .logo {
@@ -753,13 +773,18 @@ header {
       align-items: flex-start;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  padding-top: 150px;
+  padding-top: 110px;
   overflow: hidden;
+}
+@media screen and (max-width: 1400px) {
+  .screen {
+    padding-top: 85px;
+  }
 }
 .screen h2 {
   position: relative;
-  padding-bottom: 30px;
-  margin-bottom: 100px;
+  padding-bottom: 3vh;
+  margin-bottom: 9vh;
   font-size: 4.5vh;
   line-height: 1.33em;
   font-weight: bold;
@@ -770,7 +795,7 @@ header {
 .screen h2:after {
   position: absolute;
   content: "";
-  width: 400px;
+  width: 36vh;
   max-width: 100%;
   height: 3px;
   left: 0;
@@ -799,13 +824,13 @@ header {
   .screen-wrapper {
     width: 100%;
     margin: 0;
-    padding-left: 75px;
+    padding-left: 100px;
     padding-right: 75px;
   }
 }
 @media screen and (max-width: 1024px) {
   .screen-wrapper {
-    padding-left: 75px;
+    padding-left: 100px;
     padding-right: 75px;
   }
 }
@@ -1044,19 +1069,23 @@ header {
     display: none;
   }
 }
+.screen--safety h2 {
+  margin-bottom: 5vh;
+  color: #333;
+}
 .screen--safety .safety__block {
   -ms-flex-align: start;
       align-items: flex-start;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 5vh;
 }
 .screen--safety .safety__block img {
   width: 36vh;
 }
 .screen--safety .safety__inner {
   position: relative;
-  padding-top: 30px;
+  padding-top: 3vh;
   padding-left: 70px;
   text-align: left;
   z-index: 1;
@@ -1064,8 +1093,8 @@ header {
 .screen--safety .safety__title {
   position: relative;
   margin-bottom: 20px;
-  font-size: 27px;
-  line-height: 37px;
+  font-size: 2.5vh;
+  line-height: 1.3em;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -1080,10 +1109,10 @@ header {
   background: #f8505c;
 }
 .screen--safety .safety__text {
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   max-width: 350px;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: normal;
 }
 .screen--safety .safety__block:nth-child(2n+1) {
@@ -1167,6 +1196,7 @@ header {
   margin: 0;
   -ms-flex-align: stretch;
       align-items: stretch;
+  height: 100%;
 }
 .screen--contacts h2 {
   letter-spacing: .4em;
@@ -1205,13 +1235,19 @@ header {
   position: relative;
   padding: 0;
 }
+.screen--contacts .map-block #map {
+  height: 100%;
+}
 .screen--contacts .map-block img {
   width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 .screen--contacts .map-block form {
   position: absolute;
   bottom: 65px;
-  left: 65px;
+  left: 50px;
+  right: 50px;
   max-width: 632px;
   padding: 60px 70px;
   background: #fff;
@@ -1255,6 +1291,7 @@ header {
     -ms-flex-align: start;
         align-items: flex-start;
     padding-top: 50px;
+    padding-left: 100px;
   }
   .screen--contacts .contacts h2 {
     font-size: 30px;
@@ -1276,8 +1313,12 @@ header {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    pdpadding-bottom: 30px;
   }
+}
+.screen-portrait .map-block img {
+  height: 100%;
+  width: auto;
 }
 .viewing-page-2 .onepage-pagination li a:before,
 .viewing-page-4 .onepage-pagination li a:before {
@@ -1292,8 +1333,4 @@ header {
 .viewing-page-2 .onepage-pagination li a.active:after,
 .viewing-page-4 .onepage-pagination li a.active:after {
   background: #000;
-}
-.viewing-page-2 .screen h2,
-.viewing-page-4 .screen h2 {
-  color: #333;
 }
