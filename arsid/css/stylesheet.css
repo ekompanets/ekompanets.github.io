@@ -760,8 +760,8 @@ header {
   position: relative;
   padding-bottom: 30px;
   margin-bottom: 100px;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 4.5vh;
+  line-height: 1.33em;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -942,8 +942,8 @@ header {
   position: relative;
   margin-bottom: 40px;
   color: #333;
-  font-size: 72px;
-  line-height: 90px;
+  font-size: 7vh;
+  line-height: 1.25em;
   letter-spacing: 0.4em;
   z-index: 1;
 }
@@ -1050,6 +1050,9 @@ header {
   -ms-flex-pack: start;
       justify-content: flex-start;
   margin-bottom: 50px;
+}
+.screen--safety .safety__block img {
+  width: 36vh;
 }
 .screen--safety .safety__inner {
   position: relative;
