@@ -505,6 +505,10 @@ header {
     color: #fff;
     border-bottom: 1px solid #767e86;
   }
+  .menu__item > a:before,
+  .menu__item > a:after {
+    display: none !important;
+  }
   .menu__item > a:hover:after {
     display: none;
   }
