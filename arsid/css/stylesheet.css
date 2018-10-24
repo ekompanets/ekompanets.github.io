@@ -488,6 +488,7 @@ header {
 }
 .menu .msg-form-wrap form {
   max-width: 100%;
+  max-width: 320px;
   padding: 20px;
   background: transparent;
   border: 1px solid #767e86;
@@ -781,8 +782,10 @@ header {
 }
 @media screen and (max-width: 1400px) {
   .screen-wrapper {
-    width: auto;
-    margin: 0 75px;
+    width: 100%;
+    margin: 0;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1213,7 +1216,7 @@ header {
   margin: 20px 0;
   padding: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .screen--contacts .map-block form {
     bottom: unset;
     top: -204px;
@@ -1229,6 +1232,18 @@ header {
     margin: 10px 0 ;
   }
 }
+@media screen and (max-width: 1400px) {
+  .screen--contacts .contacts {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    padding-top: 50px;
+  }
+  .screen--contacts .contacts h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 991px) {
   .screen--contacts {
     padding-top: 68px;
@@ -1242,9 +1257,8 @@ header {
         align-items: flex-start;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 .viewing-page-2 .onepage-pagination li a:before,
