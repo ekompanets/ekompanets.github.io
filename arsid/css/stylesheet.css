@@ -244,12 +244,14 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1400px) {
   .wrapper {
-    padding: 0 50px;
+    padding: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1240px) {
+}
+@media screen and (max-width: 1024px) {
   .wrapper {
     padding: 0 16px;
   }
@@ -405,6 +407,15 @@ header {
   width: 100%;
   max-width: 195px;
 }
+@media screen and (max-width: 1400px) {
+  .logo {
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+  .logo img {
+    width: 150px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .logo {
     padding: 10px;
@@ -424,6 +435,11 @@ header {
   display: inline-block;
   padding: 0 25px;
 }
+@media screen and (max-width: 1400px) {
+  .menu__item {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .menu__item {
     display: block;
@@ -442,7 +458,6 @@ header {
 }
 @media screen and (max-width: 1024px) {
   .menu__item > a {
-    padding-left: 0;
     font-size: 18px;
     line-height: 22px;
     color: #fff;
