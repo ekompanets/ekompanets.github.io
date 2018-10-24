@@ -466,12 +466,34 @@ header {
   }
 }
 .menu__item > a {
+  position: relative;
   display: block;
   padding: 20px 25px;
   color: #767e86;
   font-size: 17px;
   line-height: 16px;
   letter-spacing: -0.9px;
+  transition: all 1s;
+}
+.menu__item > a:before {
+  position: absolute;
+  content: '';
+  height: 3px;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #51977e;
+  transition: all 1s;
+}
+.menu__item > a:after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #f8505c;
+  transition: all 1s;
 }
 .menu__item > a:hover {
   text-decoration: none;
@@ -486,6 +508,12 @@ header {
   .menu__item > a:hover:after {
     display: none;
   }
+}
+.menu__item.active > a:before {
+  right: 0;
+}
+.menu__item.active > a:after {
+  left: 75%;
 }
 .menu-close {
   position: relative;
@@ -550,6 +578,7 @@ header {
   min-height: 60px;
   background: transparent;
   color: #fff;
+  resize: none;
 }
 @media screen and (max-width: 1024px) {
   .menu {
@@ -1256,6 +1285,7 @@ header {
   height: 50px;
   width: 100%;
   padding: 5px 20px;
+  border: 1px solid #ededed;
 }
 .screen--contacts .map-block form input:first-child {
   margin-right: 20px;
@@ -1269,6 +1299,8 @@ header {
   width: 100%;
   margin: 20px 0;
   padding: 20px;
+  border: 1px solid #ededed;
+  resize: none;
 }
 @media screen and (max-width: 991px) {
   .screen--contacts .map-block form {
