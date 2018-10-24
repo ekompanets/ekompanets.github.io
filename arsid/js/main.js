@@ -1,7 +1,17 @@
 (function () {
 
+  var getOrientation = function () {
+    if ($(window).width() > $(window).height()) {
+      $('body').removeClass('screen-portrait').addClass('screen-land');
+    }
+    else {
+      $('body').removeClass('screen-land').addClass('screen-portrait');
+    }
+  }
+
   $(document).ready(function () {
     $('.main-wrapper').onepage_scroll();
+    getOrientation();    
 
     $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
       $(this)
@@ -25,7 +35,11 @@
        $(".main").moveTo($(this).index()+2);
        $('.menu').removeClass('show');
     })
-  })
+
+    $(window).on('resize', function () {
+      getOrientation();
+    })
+  });
 
   
 
