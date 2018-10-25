@@ -750,6 +750,7 @@ header {
   height: 16px;
   background: #fff;
   border: none;
+  opacity: 1;
 }
 .onepage-pagination li a.active:after {
   display: block;
