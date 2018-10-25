@@ -640,6 +640,7 @@ header {
 }
 .nav-button .icon span {
   margin: 6px 0 0 15px;
+  transition: 0.5s;
 }
 .nav-button .icon span:nth-child(1),
 .nav-button .icon span:nth-child(3) {
@@ -653,6 +654,22 @@ header {
   background: #333;
   width: 20px;
   height: 2px;
+}
+.show + .nav-button {
+  color: red;
+}
+.show + .nav-button .icon span:nth-child(2) {
+  opacity: 0;
+}
+.show + .nav-button .icon span:nth-child(1) {
+  position: relative;
+  -ms-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+}
+.show + .nav-button .icon span:nth-child(3) {
+  position: relative;
+  -ms-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
 }
 /*
 ================================================================================
