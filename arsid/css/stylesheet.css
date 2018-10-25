@@ -716,8 +716,9 @@ header {
   left: 0;
   width: 16px;
   height: 16px;
-  background: #737373;
+  background: #fff;
   border: none;
+  opacity: .4;
 }
 .onepage-pagination li a:after {
   position: absolute;
@@ -777,8 +778,6 @@ header {
     left: 0;
     width: 10px;
     height: 10px;
-    background: #737373;
-    border: none;
   }
   .onepage-pagination li a:after {
     position: absolute;
@@ -804,6 +803,7 @@ header {
     bottom: 60px;
     width: 10px;
     height: 10px;
+    opacity: 1;
   }
   .onepage-pagination li a.active:after {
     height: 30px;
@@ -1376,6 +1376,7 @@ header {
 .viewing-page-2 .onepage-pagination li a:before,
 .viewing-page-4 .onepage-pagination li a:before {
   background: #ededed;
+  opacity: 1;
 }
 .viewing-page-2 .onepage-pagination li a.active span,
 .viewing-page-4 .onepage-pagination li a.active span {
