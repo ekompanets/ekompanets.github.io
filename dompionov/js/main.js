@@ -23,7 +23,12 @@
     //   }
     // });
     getOrientation(); 
-    setMainBgHeight();   
+    setMainBgHeight();  
+
+    $('.new-carousel').slick({
+      dots:true
+
+    });
 
     $('ul.tabs__caption li').on('click', function() {
       $(this)
