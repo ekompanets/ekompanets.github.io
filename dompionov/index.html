@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="js/onepage-scroll.css" /> -->
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 
 	
@@ -18,6 +20,8 @@
 	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>	
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  
 </head>
 <body>
 	
@@ -70,33 +74,34 @@
 	
 	<div class="center-line"></div>
 	<div class="top-bg"></div>
-	<div class="container right-social">
-		<div class="social-wrap">
-			<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-instagram"></i></a>
-			<a href="#"><i class="fa fa-youtube"></i></a>
-			<a href="#"><i class="fa fa-twitter"></i></a>
-		</div>
-	</div>
-
 
 <!-- BEGIN CONTENT -->
 	
 
 	<section class="screen screen--main">
 		<div class="main-grid"></div>
-		<div class="container main-container main-bg">
+		<div class="main-bg"></div>
+		<!-- <div class="container main-container main-bg">
 			<div class="main-inner">
 				<h1>Дарите радость</h1>
 				<div class="subtitle">вместе с нами</div>
 				<a href="#" class="btn"><span>Оформить заказ</span></a>
 			</div>
-		</div>
+		</div> -->
 		<div class="container main-container">
 			<div class="main-inner">
 				<h1>Дарите радость</h1>
 				<div class="subtitle">вместе с нами</div>
 				<a href="#" class="btn"><span>Оформить заказ</span></a>
+			</div>
+
+			<div class="container right-social">
+				<div class="social-wrap">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -151,7 +156,9 @@
 	<section class="screen screen--news">
 		<div class="container">
 			<div class="block-flex news-wrapper">
+				
 				<div class="new">
+					<h2>О бутике</h2>
 					<img src="image/pic-new.jpg" alt="">
 					<div class="new__text">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatem dolorum suscipit, provident illum esse debitis magni assumenda. Nesciunt sit fugit similique illo. Porro, sit, quod! Debitis maiores quos perferendis.</p>
@@ -160,17 +167,50 @@
 					<a href="#" class="btn">Подробнее</a>
 				</div>
 				<div class="new new--gorizontal">
-					<div class="block-flex new__inner">
-						<div class="new__img">
-							<img src="image/pic-inst5.jpg" alt="">
+					<h2>Новости и акция</h2>
+					<div class="new-carousel">
+						<div class="new-item">
+							<div class="block-flex new__inner">
+								<div class="new__img">
+									<img src="image/pic-inst5.jpg" alt="">
+								</div>
+								
+								<div class="new__content">
+									<h3 class="new__title">Новая новость на сайте</h3>
+									<div class="new__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nesciunt. Ipsa deleniti ea excepturi beatae iusto labore quaerat minima. Quam ullam eaque quis repellat veritatis placeat, incidunt debitis modi voluptatum.</p></div>
+								</div>
+							</div>
+							<div class="btn-wrapper"><a href="#" class="btn">Подробнее</a></div>
 						</div>
 						
-						<div class="new__content">
-							<h3 class="new__title">Новая новость на сайте</h3>
-							<div class="new__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nesciunt. Ipsa deleniti ea excepturi beatae iusto labore quaerat minima. Quam ullam eaque quis repellat veritatis placeat, incidunt debitis modi voluptatum.</p></div>
+						<div class="new-item">
+							<div class="block-flex new__inner">
+								<div class="new__img">
+									<img src="image/pic-inst5.jpg" alt="">
+								</div>
+								
+								<div class="new__content">
+									<h3 class="new__title">Новая новость на сайте</h3>
+									<div class="new__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nesciunt. Ipsa deleniti ea excepturi beatae iusto labore quaerat minima. Quam ullam eaque quis repellat veritatis placeat, incidunt debitis modi voluptatum.</p></div>
+								</div>
+							</div>
+							<div class="btn-wrapper"><a href="#" class="btn">Подробнее</a></div>
+						</div>
+						
+						<div class="new-item">
+							<div class="block-flex new__inner">
+								<div class="new__img">
+									<img src="image/pic-inst5.jpg" alt="">
+								</div>
+								
+								<div class="new__content">
+									<h3 class="new__title">Новая новость на сайте</h3>
+									<div class="new__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nesciunt. Ipsa deleniti ea excepturi beatae iusto labore quaerat minima. Quam ullam eaque quis repellat veritatis placeat, incidunt debitis modi voluptatum.</p></div>
+								</div>
+							</div>
+							<div class="btn-wrapper"><a href="#" class="btn">Подробнее</a></div>
 						</div>
 					</div>
-					<div class="btn-wrapper"><a href="#" class="btn">Подробнее</a></div>
 				</div>
 			</div>
 		</div>
