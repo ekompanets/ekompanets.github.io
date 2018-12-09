@@ -18,7 +18,9 @@
 	
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>	
 	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>	
-  <script src="js/bootstrap.min.js"></script>
+	<link href="js/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen"/>
+
+  <script src="js/bootstrap/js/bootstrap.js"></script>
   <script src="js/jquery.maskedinput.js"></script>
   <script src="js/slick/slick.min.js"></script>
   
@@ -41,7 +43,17 @@
 			<ul class="menu-list">
 				<li class="menu__item"><a href="#">Clients</a></li>
 				<li class="menu__item"><a href="#">News</a></li>
-				<li class="menu__item"><a href="#"><i class="fa fa-bars"></i></a></li>
+				<li class="menu__item">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></a>
+					<div class="dropdown-menu">
+						<div class="menu__item"><a href="#">Акции</a></div>
+						<div class="menu__item"><a href="#">Букеты</a></div>
+						<div class="menu__item"><a href="#">Контакты</a></div>
+
+
+					</div>
+				</li>
+				<li class="menu__item"><a href="+380957614088">+38(095) 761-40-88</a></li>
 			</ul>
 
 			<div class="menu-close__wrap block-flex">
@@ -82,18 +94,16 @@
 	<section class="screen screen--main">
 		<div class="main-grid"></div>
 		<div class="main-bg"></div>
-		<!-- <div class="container main-container main-bg">
-			<div class="main-inner">
-				<h1>Дарите радость</h1>
-				<div class="subtitle">вместе с нами</div>
-				<a href="#" class="btn"><span>Оформить заказ</span></a>
-			</div>
-		</div> -->
 		<div class="container main-container">
 			<div class="main-inner">
 				<h1>Дарите радость</h1>
 				<div class="subtitle">вместе с нами</div>
-				<a href="#" class="btn"><span>Оформить заказ</span></a>
+				<div class="scroll-link">
+					<a href="#themeBlock" class="btn"><span>Оформить заказ</span></a>
+				</div>
+				<div class="scroll-link scroll-down">
+					<a href="#themeBlock" class=""><img src="image/icon-down.png" alt=""></a>
+				</div>
 			</div>
 
 			<div class="container right-social">
@@ -106,7 +116,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="screen screen--theme">
+	<section id="themeBlock" class="screen screen--theme">
 		<div class="container">
 			<div class="theme__gallery">
 				<ul class="screen-wrapper block-flex theme__gallery-caption">

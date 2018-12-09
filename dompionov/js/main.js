@@ -30,6 +30,68 @@
 
     });
 
+    $(".scroll-link").on("click", "a", function (event) {
+
+      event.preventDefault();
+      var id  = $(this).attr('href'),      
+      top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 600);
+    });
+
+    $(window).on("scroll", function (event) {
+
+      
+    });
+
+    // $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
+    //   delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
+    //   if (delta < 0) {
+    //     var top = $('#themeBlock').offset().top;
+    //     if ($('body').scrollTop() < top) {
+    //       $('body,html').animate({scrollTop: top}, 600);
+    //     }
+    //   }
+    // });
+
+    // var scrollPos = 0;
+    // $(window).scroll(function(event){
+    //    var st = $(this).scrollTop();
+    //    var top = $('#themeBlock').offset().top;
+    //    if ((st > scrollPos)){
+    //      console.log(top)
+    //      console.log(st)
+
+    //      console.log('down')
+    //      if ($(event.target).closest('.screen--main').length || $(event.target).closest('header').length  ) {
+    //         $('body,html').animate({scrollTop: top}, 600);
+    //        }
+
+    //    } 
+    //    scrollPos = st + 10;
+    // });
+
+    $(window).bind('mousewheel swipe', function(event) {
+      var delta = event.originalEvent.wheelDelta
+      if (delta < 0) {
+        // down
+        var top = $('#themeBlock').offset().top;
+        console.log(top)
+           console.log(delta)
+
+           console.log('down')
+           console.log(event.target)
+           console.log($(event.target).closest('.screen--main').length)
+           if ($(event.target).closest('.screen--main').length || $(event.target).closest('header').length  ) {
+            $('body,html').animate({scrollTop: top}, 600);
+           }
+      }
+      else {
+           console.log(delta)
+
+      }
+  });
+
+
     $('ul.tabs__caption li').on('click', function() {
       $(this)
         .addClass('active').siblings().removeClass('active')
@@ -45,13 +107,6 @@
     $('.menu-close').on('click',function () {
         $('.menu').removeClass('show')
     });
-
-    $('.menu li').on('click', function() {
-       $(".main").moveTo($(this).index()+2);
-       $('.menu').removeClass('show');
-       $('.menu li.active').removeClass('active');
-       $(this).addClass('active');
-    })
 
     $(window).on('resize', function () {
       getOrientation();
