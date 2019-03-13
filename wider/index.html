@@ -234,6 +234,28 @@
 <script>
 	$(document).ready(function () {
 		if ($('.banner').length > 0) {
+
+			var hBanner = $('.banner-wrapper').height();
+
+			$('.banner-item').each(function() {
+				$(this).css('height', hBanner);
+
+				// Replace background by img in .page-section--slide 
+			  // $('.page-section--slide').each(function(){
+			      var section = $(this).find('img').attr('src');
+			      
+			      if(section == true){
+			          $(this).css({'background-color':'#fff'});
+			  
+			      }
+			      else{
+			          $(this).css({'background-image':'url(' + section + ')'});
+			    
+			      }
+			  // });
+			// End of replace background by img in .page-section--slide
+			});
+
 			$('.banner').slick({
 				slidesToShow: 1,
 			  slidesToScroll: 1,
@@ -245,7 +267,31 @@
 			  adaptiveHeight: true
 			})
 		}
+
+		$(window).resize(function() {
+		    if ($('.banner').length > 0) {
+
+					var hBanner = $('.banner-wrapper').height();
+
+					$('.banner-item').each(function() {
+						$(this).css('height', hBanner);
+						var section = $(this).find('img').attr('src');
+			      
+			      if(section == true){
+			          $(this).css({'background-color':'#fff'});
+			  
+			      }
+			      else{
+			          $(this).css({'background-image':'url(' + section + ')'});
+			    
+			      }
+					});
+
+				
+				}
+		});
 	});
+
 </script>
 	<script type="text/javascript" src="js/main.js"></script>	
 
