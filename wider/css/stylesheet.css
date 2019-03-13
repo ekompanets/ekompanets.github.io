@@ -531,6 +531,7 @@ input[type=number] {
 
 header {
 	position: relative;
+	position: absolute;
 	top: 5vh;
 	left: 0;
 	top: 0;
@@ -796,10 +797,15 @@ header .header__wrapper:after {
 
 .banner-wrapper {
 	position: relative;
+	padding-top: 105px;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .banner-item {
 	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .banner-item p {
@@ -820,6 +826,7 @@ header .header__wrapper:after {
 .banner-item img {
 	max-width: 100%;
 	width: 100%;
+	opacity: 0;
 }
 
 .banner .slick-next {
@@ -1262,6 +1269,10 @@ header .header__wrapper:after {
 }
 
 @media screen and (max-width: 1023px) {
+
+.banner-wrapper {
+	padding-top: 90px;
+}
 
 .banner-item p {
 	font-size: 20px;
