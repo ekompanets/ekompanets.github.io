@@ -551,6 +551,18 @@ header .header__wrapper:after {
 	display: none;
 }
 
+header .header__social a {
+	font-size: 14px;
+	line-height: 22px;
+	margin-left: 10px;
+	color: #333;
+}
+
+header .header__social a:hover {
+	color: #2d6b7f;
+	text-decoration: none;
+}
+
 .logo {
 	position: relative;
 	padding: 10px 20px;
@@ -562,10 +574,29 @@ header .header__wrapper:after {
 	max-height: 100%;
 }
 
+.lang a {
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 22px;
+	font-family: 'HelveticaNeueCyrRoman';
+	text-decoration: none;
+}
+
+.lang a.active,
+.lang a:hover {
+	color: #2d6b7f;
+	text-decoration: none;
+}
+
 .menu {
 	position: relative;
 	padding-left: 0px;
 	font-size: 0;
+}
+
+.menu__list {
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .menu__item {
@@ -577,7 +608,7 @@ header .header__wrapper:after {
 .menu__item > a {
 	position: relative;
 	display: block;
-	padding: 20px 25px;
+	padding: 20px 15px;
 	font-family: 'HelveticaNeueCyrRoman';
 	color: #333;
 	font-size: 15px;
@@ -1144,6 +1175,14 @@ header .header__wrapper:after {
 	padding: 0 16px;
 }
 
+header .header__wrapper {
+	padding-right: 90px;
+}
+
+.logo img {
+	max-width: 120px;
+}
+
 .logo {
 	padding-left: 0;
 }
@@ -1220,10 +1259,14 @@ header .header__wrapper:after {
 .nav-button {
 	position: fixed;
 	right: 50px;
-	top: 50px;
+	top: 30px;
 	display: -ms-flexbox;
 	display: flex;
 	z-index: 101;
+}
+
+.banner-wrapper {
+	padding-top: 80px;
 }
 
 .practice {
@@ -1269,10 +1312,6 @@ header .header__wrapper:after {
 }
 
 @media screen and (max-width: 1023px) {
-
-.banner-wrapper {
-	padding-top: 90px;
-}
 
 .banner-item p {
 	font-size: 20px;
@@ -1328,12 +1367,12 @@ header {
 
 header .header__wrapper {
 	padding-left: 15px;
-	padding-right: 15px;
+	padding-right: 90px;
 }
 
 .nav-button {
 	right: 15px;
-	top: 35px;
+	top: 30px;
 }
 
 .section-title {
