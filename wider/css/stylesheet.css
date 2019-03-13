@@ -552,8 +552,8 @@ header .header__wrapper:after {
 
 .logo {
 	position: relative;
-	padding: 10px 50px 20px;
-	margin-right: 90px;
+	padding: 10px 20px;
+	margin-right: 20px;
 }
 
 .logo img {
