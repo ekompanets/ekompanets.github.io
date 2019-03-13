@@ -570,7 +570,7 @@ header .header__wrapper:after {
 .menu__item {
 	position: relative;
 	display: inline-block;
-	padding: 0 25px;
+	padding: 0px;
 }
 
 .menu__item > a {
