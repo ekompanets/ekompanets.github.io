@@ -826,6 +826,10 @@ header .header__social a:hover {
 	min-height: 100%;
 }
 
+.banner {
+	background: #333;
+}
+
 .banner-wrapper {
 	position: relative;
 	padding-top: 105px;
