@@ -14,8 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>	
-	<script src="js/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-	
 
 </head>
 <body>
@@ -59,8 +57,12 @@
 	<div class="banner">
 		<div class="banner-slick">
 			<div class="banner__item">
-				<img src="img/slider1.jpg" alt="" class="hidden-xs">
-				<img src="img/slider-mob1.jpg" alt="" class="visible-xs">
+				<picture>
+				 <source srcset="img/slider1.jpg" media="(min-width: 768px)">
+				 <img src="img/slider-mob1.jpg" alt="">
+				</picture>
+				<!-- <img src="img/slider1.jpg" alt="" class="hidden-xs">
+				<img src="img/slider-mob1.jpg" alt="" class="visible-xs"> -->
 
 				<div class="container">
 					<div class="banner__legend">
@@ -75,8 +77,10 @@
 			</div>
 
 			<div class="banner__item">
-				<img src="img/slider2.jpg" alt="" class="hidden-xs">
-				<img src="img/slider-mob1.jpg" alt="" class="visible-xs">
+				<picture>
+				 <source srcset="img/slider2.jpg" media="(min-width: 768px)">
+				 <img src="img/slider-mob1.jpg" alt="">
+				</picture>
 
 				<div class="container">
 					<div class="banner__legend">
@@ -91,8 +95,10 @@
 			</div>
 
 			<div class="banner__item">
-				<img src="img/slider1.jpg" alt="" class="hidden-xs">
-				<img src="img/slider-mob1.jpg" alt="" class="visible-xs">
+				<picture>
+				 <source srcset="img/slider1.jpg" media="(min-width: 768px)">
+				 <img src="img/slider-mob1.jpg" alt="">
+				</picture>
 
 				<div class="container">
 					<div class="banner__legend">
@@ -106,8 +112,10 @@
 				</div>
 			</div>
 			<div class="banner__item">
-				<img src="img/slider2.jpg" alt="" class="hidden-xs">
-				<img src="img/slider-mob1.jpg" alt="" class="visible-xs">
+				<picture>
+				 <source srcset="img/slider2.jpg" media="(min-width: 768px)">
+				 <img src="img/slider-mob1.jpg" alt="">
+				</picture>
 
 				<div class="container">
 					<div class="banner__legend">
@@ -122,8 +130,10 @@
 			</div>
 
 			<div class="banner__item">
-				<img src="img/slider1.jpg" alt="" class="hidden-xs">
-				<img src="img/slider-mob1.jpg" alt="" class="visible-xs">
+				<picture>
+				 <source srcset="img/slider1.jpg" media="(min-width: 768px)">
+				 <img src="img/slider-mob1.jpg" alt="">
+				</picture>
 
 				<div class="container">
 					<div class="banner__legend">
@@ -138,8 +148,10 @@
 			</div>
 
 			<div class="banner__item">
-				<img src="img/slider2.jpg" alt="" class="hidden-xs">
-				<img src="img/slider-mob1.jpg" alt="" class="visible-xs">
+				<picture>
+				 <source srcset="img/slider1.jpg" media="(min-width: 768px)">
+				 <img src="img/slider-mob1.jpg" alt="">
+				</picture>
 
 				<div class="container">
 					<div class="banner__legend">
@@ -2753,12 +2765,12 @@
 </div>		
 
 <!-- BODY EOF   -->
+	<script src="js/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
 	<script type="text/javascript" src="js/scrollcustom/jquery.mousewheel.js" async></script>
-
 	<script type="text/javascript" src="js/scrollcustom/jquery.jscrollpane.min.js" async></script>
-
+	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
 	<script type="text/javascript" src="js/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/jquery.maskedinput.js" async></script>
 	<script type="text/javascript" src="js/main.js"></script>	
 
 	<script>
