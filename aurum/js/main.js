@@ -20,6 +20,25 @@ if ($(window).width() >767) {
 
 $(document).ready(function(){
 
+  $(window).bind('scroll', function() {
+    if ($(window).scrollTop() > 400) {
+      $('.card__order-wrapper').addClass('fixed');
+    } else {
+      $('.card__order-wrapper').removeClass('fixed');
+    }
+  });
+
+
+  $(".scroll-link").on("click", function (event) {
+    event.preventDefault();
+
+    var id  = $(this).attr('href'),
+    
+    top = $(id).offset().top;
+
+    $('body, html').animate({scrollTop: top}, 600);
+  });
+
 // функции для окна Спросить эксперта (главная) / Консультация (категория)
 
   $('#expertQuest').on('click', function(){
@@ -41,6 +60,46 @@ $(document).ready(function(){
   })
 // EOF
 
+// BEGIN Инициализация слайдеров, если есть 
+$('.main-wrapper .product-slider').each(function() {
+
+  if ($(window).width() > 767) {
+    $(this).slick({
+      infinite: true,
+      arrows: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
+  
+});
+// EOF Инициализация слайдеров, если есть 
+
 
   
 
@@ -61,7 +120,10 @@ $(document).ready(function(){
 
     // 
     $(function(){
-      $('.custom-scroll').jScrollPane();
+      if ($('.custom-scroll').length > 0) {
+        $('.custom-scroll').jScrollPane();
+      }
+      
     });
 
   } else {
