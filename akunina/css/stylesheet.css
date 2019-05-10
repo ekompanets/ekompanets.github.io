@@ -1302,7 +1302,6 @@ header .header__social a:hover {
 .menu {
 	position: relative;
 	padding-left: 0px;
-	padding-top: 50px;
 	font-size: 0;
 }
 
@@ -1559,7 +1558,6 @@ header .header__social a:hover {
 }
 
 .main-wrapper * {
-	position: relative;
 	z-index: 1;
 }
 
@@ -1617,6 +1615,10 @@ header .header__social a:hover {
 	font-family: 'vogue_highline_serifmedium';
 	text-transform: uppercase;
 	color: #000;
+}
+
+.banner__title span:first-child {
+	display: block;
 }
 
 .banner__title span:nth-child(2) {
