@@ -16,7 +16,7 @@
 
 @font-face {
 	font-family: 'vogue_highline_serifmedium';
-	src: url('../fonts/10841.otf') format('opentype'), url('10841-webfont.woff2') format('woff2'), url('10841-webfont.woff') format('woff');
+	src: url('../fonts/10841.otf') format('opentype'), url('../fonts/10841-webfont.woff2') format('woff2'), url('../fonts/10841-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
