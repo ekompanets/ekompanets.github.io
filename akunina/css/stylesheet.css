@@ -1680,6 +1680,11 @@ header .header__social a:hover {
 	text-align: left;
 }
 
+.section-title .btn {
+	position: relative;
+	top: 15px;
+}
+
 .section-title:before {
 	position: absolute;
 	content: '';
@@ -2225,11 +2230,6 @@ header .header__wrapper {
 
 @media screen and (max-width: 1366px) {
 
-.banner__title span {
-	font-size: 84px;
-	line-height: 70px;
-}
-
 .banner__subtitle span {
 	display: block;
 	font-size: 20px;
@@ -2270,6 +2270,15 @@ header .header__wrapper {
 }
 
 @media screen and (max-width: 1240px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+.banner__title span {
+	font-size: 84px;
+	line-height: 70px;
+}
 
 }
 
