@@ -1037,6 +1037,7 @@ button {
 */
 
 body {
+	position: relative;
 	min-width: 320px;
 	font-family: 'Yandex Sans Text Light', sans-serif;
 	color: #333;
@@ -1058,7 +1059,7 @@ img {
 }
 
 a:hover {
-	color: #ceaf91;
+	color: #e8cdac;
 	text-decoration: none;
 }
 
@@ -1070,13 +1071,13 @@ a:hover {
 	font-family: 'Yandex Sans Text Light', sans-serif;
 	font-weight: 300;
 	line-height: 40px;
-	color: #d6aa71;
+	color: #e8cdac;
 	text-align: center;
 	background: transparent;
 	text-transform: none;
 	border-radius: 0;
-	border-top: 1px solid #d9b07c;
-	border-left: 1px solid #d9b07c;
+	border-top: 1px solid #e8cdac;
+	border-left: 1px solid #e8cdac;
 	border-bottom: 1px solid #e1c096;
 	border-right: 1px solid #e4c7a3;
 	outline: none !important;
@@ -1086,7 +1087,7 @@ a:hover {
 .btn:hover {
 	opacity: .85;
 	color: #fff;
-	background: #d9b07c;
+	background: #e8cdac;
 	transition: all .3s;
 }
 
@@ -1301,6 +1302,7 @@ header .header__social a:hover {
 .menu {
 	position: relative;
 	padding-left: 0px;
+	padding-top: 50px;
 	font-size: 0;
 }
 
@@ -1459,13 +1461,20 @@ header .header__social a:hover {
 	flex-direction: column;
 	-ms-flex-align: end;
 	align-items: flex-end;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-right: 14px;
+	padding-bottom: 5px;
 	margin-top: -5px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #e8cdac;
 }
 
 .nav-button .icon span {
 	margin: 6px 0 0 15px;
 	transition: 0.5s;
-	box-shadow: 0 0 1px 1px #000000;
 }
 
 .nav-button .icon span:nth-child(1),
@@ -1533,6 +1542,27 @@ header .header__social a:hover {
 	min-height: 100%;
 }
 
+.main-wrapper:before,
+.main-wrapper:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 20%;
+	width: 20%;
+	height: 100%;
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+}
+
+.main-wrapper:after {
+	left: 60%;
+}
+
+.main-wrapper * {
+	position: relative;
+	z-index: 1;
+}
+
 .banner {
 	background: transparent;
 }
@@ -1582,7 +1612,7 @@ header .header__social a:hover {
 .banner__title span {
 	display: inline-block;
 	padding-bottom: 4vh;
-	font-size: 13vh;
+	font-size: 9vh;
 	line-height: 9vh;
 	font-family: 'vogue_highline_serifmedium';
 	text-transform: uppercase;
@@ -1671,7 +1701,7 @@ header .header__social a:hover {
 }
 
 .screen-portrait .banner__title span:nth-child(2) {
-	border-bottom: 3px solid #cbb495;
+	border-bottom: 3px solid #e8cdac;
 }
 
 .screen-portrait .banner__social {
@@ -1699,7 +1729,7 @@ header .header__social a:hover {
 	left: -45px;
 	width: 45%;
 	height: 1px;
-	background: #e1c5a1;
+	background: #e8cdac;
 }
 
 .slider-container {
@@ -1709,10 +1739,10 @@ header .header__social a:hover {
 .slider-container .slick-prev {
 	width: 36px;
 	height: 136px;
-	left: -80px;
+	left: -50px;
 	background: transparent;
 	transition: all .3s;
-	top: 150px;
+	top: 50%;
 	z-index: 2;
 }
 
@@ -1728,10 +1758,10 @@ header .header__social a:hover {
 .slider-container .slick-next {
 	width: 36px;
 	height: 136px;
-	right: -80px;
+	right: -50px;
 	background: transparent;
 	transition: all .3s;
-	top: 150px;
+	top: 50%;
 }
 
 .slider-container .slick-next:before {
@@ -1757,6 +1787,7 @@ header .header__social a:hover {
 }
 
 .slider-item__title {
+	display: block;
 	padding: 3vh 0;
 	font-size: 23px;
 	color: #333;
@@ -1774,7 +1805,7 @@ header .header__social a:hover {
 	padding: 10px 30px;
 	padding-left: 0;
 	background: url(../image/arrow.png) no-repeat right center;
-	color: #d6aa71;
+	color: #e8cdac;
 	font-size: 21px;
 }
 
@@ -1786,7 +1817,7 @@ header .header__social a:hover {
 	font-size: 18px;
 	line-height: 40px;
 	color: #fff;
-	background: #ecc6a1;
+	background: #e8cdac;
 }
 
 .slider-item.item-video .slider-item__date {
@@ -1813,7 +1844,7 @@ header .header__social a:hover {
 	width: 10vh;
 	height: 10vh;
 	border-radius: 50%;
-	background: #ecc6a1;
+	background: rgba(232, 205, 172, 0.8);
 	transition: all .3s;
 }
 
@@ -1832,8 +1863,8 @@ header .header__social a:hover {
 	transition: all .3s;
 }
 
-.slider-item__video .video-btn:hover:before {
-	background: #333;
+.slider-item__video .video-btn:hover {
+	background: #e8cdac;
 }
 
 .screen-portrait section {
@@ -1879,8 +1910,6 @@ header .header__social a:hover {
 
 .footer__top {
 	padding: 18vh 0;
-	-ms-flex-align: start;
-	align-items: flex-start;
 }
 
 .footer__bottom {
@@ -1897,7 +1926,7 @@ header .header__social a:hover {
 	left: -45px;
 	width: 45%;
 	height: 1px;
-	background: #e1c5a1;
+	background: #e8cdac;
 }
 
 .footer__bottom .developer {
@@ -1915,9 +1944,16 @@ header .header__social a:hover {
 	padding-left: 55px;
 	margin-bottom: 3vh;
 	font-size: 25px;
-	line-height: 25px;
+	line-height: 35px;
 	color: #333;
 	white-space: nowrap;
+}
+
+.footer__contacts a span,
+.footer__contacts span span {
+	display: inline;
+	padding: 0 2px;
+	color: #e4e4e4;
 }
 
 .footer__contacts a i,
@@ -1927,8 +1963,12 @@ header .header__social a:hover {
 	top: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	color: #ecc6a1;
+	color: #e8cdac;
 	font-size: 30px;
+}
+
+.footer__contacts span {
+	margin-bottom: 0;
 }
 
 .footer__social {
@@ -1939,13 +1979,18 @@ header .header__social a:hover {
 	display: inline-block;
 	width: 60px;
 	height: 60px;
-	margin-left: 10px;
+	margin-right: 10px;
 	font-size: 34px;
 	color: #fff;
 	line-height: 60px;
 	text-align: center;
-	background: #ecc6a1;
+	background: #e8cdac;
 	border-radius: 50%;
+}
+
+.footer__social a:hover {
+	background: #c3c3c3;
+	color: #fff;
 }
 
 .screen-portrait .footer__top {
@@ -1996,7 +2041,7 @@ header .header__social a:hover {
 }
 
 .biography__title {
-	color: #e1c5a1;
+	color: #e8cdac;
 	font-size: 40px;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -2004,7 +2049,18 @@ header .header__social a:hover {
 .biography__text {
 	position: relative;
 	padding: 6vh 0;
+}
+
+.biography__text:before {
+	position: absolute;
+	content: '';
+	left: 80%;
+	top: 0;
+	bottom: 0;
 	background: #fff;
+	width: 20px;
+	-ms-transform: translate(10px);
+	transform: translate(10px);
 }
 
 .biography__text p {
@@ -2016,6 +2072,8 @@ header .header__social a:hover {
 
 .subscribe__label {
 	font-size: 25px;
+	color: #333;
+	margin-bottom: 10px;
 }
 
 .subscribe__form {
@@ -2054,7 +2112,7 @@ header .header__social a:hover {
 }
 
 .subscribe__form .btn-send:hover {
-	background: #ecc6a1;
+	background: #e8cdac;
 }
 
 .screen-portrait .subscribe__form {
@@ -2082,7 +2140,7 @@ header .header__social a:hover {
 }
 
 .screen-portrait .subscribe__form .btn-send:hover {
-	background: #ecc6a1;
+	background: #e8cdac;
 }
 
 @media (min-width: 1400px) {
@@ -2225,14 +2283,16 @@ header .header__wrapper {
 	padding: 0;
 }
 
+.menu__item > a {
+	font-size: 15px;
+}
+
 }
 
 @media screen and (max-width: 1366px) {
 
-.banner__subtitle span {
-	display: block;
-	font-size: 20px;
-	line-height: 22px;
+.banner__subtitle {
+	letter-spacing: 2px;
 }
 
 .screen-portrait .banner__subtitle span {
@@ -2279,6 +2339,12 @@ header .header__wrapper {
 	line-height: 70px;
 }
 
+.banner__subtitle span {
+	display: block;
+	font-size: 20px;
+	line-height: 22px;
+}
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -2301,6 +2367,7 @@ header .header__wrapper {
 
 .menu__item {
 	display: block;
+	text-align: center;
 }
 
 .menu__item > a {
@@ -2339,7 +2406,7 @@ header .header__wrapper {
 	bottom: 0;
 	right: -100%;
 	width: 100%;
-	padding: 10px;
+	padding: 150px 10px 10px;
 	transition: 0.5s;
 	background: #262626;
 	z-index: 100;
@@ -2347,7 +2414,6 @@ header .header__wrapper {
 }
 
 .menu.show {
-	padding-top: 50px;
 	right: 0;
 	transition: 0.5s;
 }
@@ -2478,6 +2544,32 @@ header .header__wrapper {
 	letter-spacing: .5px;
 }
 
+.screen-portrait .banner-wrapper {
+	height: 430px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.screen-portrait .banner-wrapper .banner {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.screen-portrait .banner-wrapper .banner__item {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.screen-portrait .banner-wrapper .banner__text {
+	border: none;
+}
+
 .section-title {
 	padding: 30px 0;
 	-ms-flex-direction: column;
@@ -2532,6 +2624,13 @@ header .header__wrapper {
 .footer__bottom {
 	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.footer__bottom .copyright {
+	margin-bottom: 15px;
+	text-align: center;
 }
 
 .biography {
@@ -2599,6 +2698,14 @@ header .header__wrapper {
 
 .screen-portrait .subscribe__form input[type="submit"] {
 	width: auto;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+.section-title .btn {
+	top: 0;
 }
 
 }
