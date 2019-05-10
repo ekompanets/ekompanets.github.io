@@ -15,6 +15,13 @@
 }
 
 @font-face {
+	font-family: 'vogue_highline_serifmedium';
+	src: url('../fonts/10841.otf') format('opentype'), url('10841-webfont.woff2') format('woff2'), url('10841-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'voguehighlineserif-medium';
 	src: url('../fonts/voguehighlineserif-medium.eot') format('embedded-opentype');
 	font-weight: normal;
@@ -1577,7 +1584,7 @@ header .header__social a:hover {
 	padding-bottom: 4vh;
 	font-size: 13vh;
 	line-height: 9vh;
-	font-family: 'voguehighlineserif-medium';
+	font-family: 'vogue_highline_serifmedium';
 	text-transform: uppercase;
 	color: #000;
 }
@@ -1682,7 +1689,7 @@ header .header__social a:hover {
 
 .section-title .btn {
 	position: relative;
-	top: 15px;
+	top: 4vh;
 }
 
 .section-title:before {
@@ -1703,7 +1710,7 @@ header .header__social a:hover {
 	width: 36px;
 	height: 136px;
 	left: -80px;
-	background: #e6e6e6;
+	background: transparent;
 	transition: all .3s;
 	top: 150px;
 	z-index: 2;
@@ -1718,15 +1725,11 @@ header .header__social a:hover {
 	background: url(../image/slide-arrow.png) no-repeat center;
 }
 
-.slider-container .slick-prev:hover {
-	background: #ecc6a1;
-}
-
 .slider-container .slick-next {
 	width: 36px;
 	height: 136px;
 	right: -80px;
-	background: #e6e6e6;
+	background: transparent;
 	transition: all .3s;
 	top: 150px;
 }
@@ -1740,10 +1743,6 @@ header .header__social a:hover {
 	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
 	background: url(../image/slide-arrow.png) no-repeat center;
-}
-
-.slider-container .slick-next:hover {
-	background: #ecc6a1;
 }
 
 .slider-item {
