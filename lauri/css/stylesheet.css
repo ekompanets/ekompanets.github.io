@@ -1259,7 +1259,7 @@ header .header__social a:hover {
 }
 
 .footer__social {
-	width: 25%;
+	min-width: 25%;
 }
 
 .footer__social a {
