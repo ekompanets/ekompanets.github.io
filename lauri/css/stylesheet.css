@@ -864,6 +864,30 @@ header .header__social a:hover {
 	z-index: 1;
 }
 
+.promo-bg {
+	position: relative;
+}
+
+.promo-bg:before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: url(../image/bg-left3.png) no-repeat left bottom;
+}
+
+.promo-bg:after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: url(../image/bg-right3.png) no-repeat right bottom;
+}
+
 .promo > .block-flex {
 	-ms-flex-align: start;
 	align-items: flex-start;
@@ -1272,6 +1296,23 @@ header .header__social a:hover {
 
 }
 
+@media screen and (max-width: 1699px) {
+
+.promo-bg {
+	overflow: hidden;
+}
+
+.promo-bg:before {
+	left: 0;
+	background: url(../image/bg-left3.png) no-repeat -100px bottom;
+}
+
+.promo-bg:after {
+	right: -100px;
+}
+
+}
+
 @media screen and (max-width: 1400px) {
 
 .wrapper {
@@ -1285,6 +1326,22 @@ header .header__social a:hover {
 
 .menu__item {
 	padding: 0;
+}
+
+}
+
+@media screen and (max-width: 1365px) {
+
+.promo-bg {
+	overflow: hidden;
+}
+
+.promo-bg:before {
+	display: none;
+}
+
+.promo-bg:after {
+	display: none;
 }
 
 }
