@@ -76,37 +76,75 @@
 
 
     var a = 0;
+    var b = 0;
+
     $(window).scroll(function() {
 
       var oTop = $('#counter').offset().top + window.innerHeight -200;
       if (a == 0 && $(window).scrollTop() < oTop) {
-        $('.counter-value').each(function() {
-          var $this = $(this),
-            countTo = $this.attr('data-count');
-          $({
-            countNum: $this.text()
-          }).animate({
-              countNum: countTo
-            },
-            {
-              duration: 5000,
-              easing: 'swing',
-              step: function() {
-                $this.text(Math.floor(this.countNum));
 
-              },
-              complete: function() {
-                $this.text(this.countNum);
-              }
+        // $('.counter-value').each(function() {
+        //   var $this = $(this),
+        //     countTo = $this.attr('data-count');
+        //   $({
+        //     countNum: $this.text()
+        //   }).animate({
+        //       countNum: countTo
+        //     },
+        //     {
+        //       duration: 5000,
+        //       easing: 'swing',
+        //       step: function() {
+        //         $this.text(Math.floor(this.countNum));
 
-            });
-        });
+        //       },
+        //       complete: function() {
+        //         $this.text(this.countNum);
+        //       }
+
+        //     });
+        // });
+
+function animateValue(id, start, end, duration) {
+    // assumes integer values for start and end
+    
+    var obj = document.getElementById(id);
+    var range = end - start;
+    // no timer shorter than 50ms (not really visible any way)
+    var minTimer = 50;
+    // calc step time to show all interediate values
+    var stepTime = Math.abs(Math.floor(duration / range));
+    
+    // never go below minTimer
+    stepTime = Math.max(stepTime, minTimer);
+    
+    // get current time and calculate desired end time
+    var startTime = new Date().getTime();
+    var endTime = startTime + duration;
+    var timer;
+  
+    function run() {
+        var now = new Date().getTime();
+        var remaining = Math.max((endTime - now) / duration, 0);
+        var value = Math.round(end - (remaining * range));
+        obj.innerHTML = value;
+        if (value == end) {
+            clearInterval(timer);
+        }
+    }
+    
+    timer = setInterval(run, stepTime);
+    run();
+}
+$('.counter-value').each(function() {
+  animateValue($(this).attr("id"), 1, $(this).attr('data-count'), 5000);
+
+})
         a = 1;
       }
 
-      a = 0;
       var oTop = $('#counter2').offset().top - window.innerHeight;
-      if (a == 0 && $(window).scrollTop() > oTop) {
+      if (b == 0 && $(window).scrollTop() > oTop) {
 
         // $('.counter-1').each(function() {
         //   var $this = $(this),
@@ -196,7 +234,7 @@
         // $('.counter-2').
 
         // $('.counter-3').
-         a = 1;
+         b = 1;
       }
 
     });
