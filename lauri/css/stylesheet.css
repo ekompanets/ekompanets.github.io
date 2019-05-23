@@ -1124,6 +1124,7 @@ header .header__social a:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: all ease .8s;
 }
 
 .project__bg img {
