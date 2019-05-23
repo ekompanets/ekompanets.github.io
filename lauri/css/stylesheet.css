@@ -452,6 +452,9 @@ header .header__wrapper:after {
 }
 
 header .header__phone {
+	padding: 14px 20px;
+	background: url(../image/telephone.svg) no-repeat left center;
+	background-size: 14px;
 	white-space: nowrap;
 }
 
