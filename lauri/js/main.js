@@ -27,7 +27,7 @@
 
 
     $('.feature > .block-flex').each(function(){
-      $(this).fadeOut(0)
+      // $(this).fadeOut(0)
     })
     getOrientation(); 
     $(window).on('resize', function () {
@@ -235,16 +235,18 @@ $('.counter-value').each(function() {
         // });
 
         setTimeout(function() {
-          $('.counter-1').fadeIn(300);
+          // $('.counter-1').fadeIn(300);
+          $('.counter-1').animate({opacity: 1}, 300);
+
 
           setTimeout(function() {
-            $('.counter-2').fadeIn(300);
+            $('.counter-2').animate({opacity: 1}, 300);
 
             setTimeout(function() {
-              $('.counter-3').fadeIn(300);
-            }, 800);
-          }, 800);
-        }, 800);
+              $('.counter-3').animate({opacity: 1}, 300);
+            }, 500);
+          }, 500);
+        }, 500);
         // $('.counter-2').
 
         // $('.counter-3').
