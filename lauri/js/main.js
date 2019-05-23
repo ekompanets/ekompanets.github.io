@@ -14,6 +14,18 @@
   }
 
   $(document).ready(function () {
+
+    if ($(window).scrollTop() > 150) {
+      $('.header__wrapper').addClass('scrolled')
+      $('.header__wrapper').removeClass('top-scrolled')
+
+    } else {
+      $('.header__wrapper').removeClass('scrolled')
+      $('.header__wrapper').addClass('top-scrolled')
+
+    }
+
+
     $('.feature > .block-flex').each(function(){
       $(this).fadeOut(0)
     })
@@ -23,6 +35,16 @@
     })
 
     $(window).scroll(function() {
+      if ($(window).scrollTop() > 150) {
+      $('.header__wrapper').addClass('scrolled')
+      $('.header__wrapper').removeClass('top-scrolled')
+
+    } else {
+      $('.header__wrapper').removeClass('scrolled')
+      $('.header__wrapper').addClass('top-scrolled')
+
+    }
+
       $('.mov').each(function(){
         var imagePos = $(this).offset().top;
         var bottomOfWindow = $(window).scrollTop() + $(window).height();
@@ -32,15 +54,7 @@
       });
     });
 
-    wow = new WOW(
-      {
-      // boxClass:     'wow',      // default
-      // animateClass: 'animated', // default
-      // offset:       200,          // default
-      // mobile:       true,       // default
-      // live:         true        // default
-    }
-    )
+    wow = new WOW()
     wow.init();
 
 
