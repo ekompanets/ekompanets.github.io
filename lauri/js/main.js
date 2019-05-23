@@ -244,9 +244,9 @@ $('.counter-value').each(function() {
 
             setTimeout(function() {
               $('.counter-3').animate({opacity: 1}, 300);
-            }, 500);
-          }, 500);
-        }, 500);
+            }, 800);
+          }, 800);
+        }, 800);
         // $('.counter-2').
 
         // $('.counter-3').
