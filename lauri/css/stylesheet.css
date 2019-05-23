@@ -420,8 +420,7 @@ a:hover {
 */
 
 header {
-	position: relative;
-	position: absolute;
+	position: fixed;
 	top: 5vh;
 	left: 0;
 	top: 0;
@@ -433,8 +432,17 @@ header {
 }
 
 header .header__wrapper {
-	height: 145px;
 	padding: 20px 50px;
+	transition: all .5s;
+}
+
+header .header__wrapper.top-scrolled {
+	height: 145px;
+}
+
+header .header__wrapper.scrolled {
+	height: 75px;
+	transition: all .5s;
 }
 
 header .header__wrapper:before,
@@ -444,6 +452,10 @@ header .header__wrapper:after {
 
 header .header__phone {
 	white-space: nowrap;
+}
+
+header .header__phone span {
+	color: #ddd;
 }
 
 header .header__social a {
@@ -462,6 +474,7 @@ header .header__social a:hover {
 	position: relative;
 	padding: 10px 20px;
 	margin-right: 20px;
+	animation-delay: .6s;
 }
 
 .logo img {
@@ -796,7 +809,7 @@ header .header__social a:hover {
 	position: relative;
 	padding: 45px 90px 75px;
 	padding-right: 70px;
-	margin-left: 100px;
+	margin-left: 97px;
 }
 
 .left-design {
@@ -821,7 +834,7 @@ header .header__social a:hover {
 	bottom: 50%;
 	width: 22px;
 	background: transparent;
-	border: 2px solid #272727;
+	border: 5px solid #272727;
 	border-right: none;
 	border-top: none;
 }
@@ -832,7 +845,7 @@ header .header__social a:hover {
 	left: 0;
 	top: 50%;
 	bottom: 0%;
-	width: 2px;
+	width: 5px;
 	background: #272727;
 }
 
@@ -1138,6 +1151,7 @@ header .header__social a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 105px;
+	background: #333;
 }
 
 .projects:after {
@@ -1164,6 +1178,7 @@ header .header__social a:hover {
 	background-position: center;
 	opacity: 0;
 	z-index: 0;
+	transition: all .6s;
 }
 
 .projects .bg img {
@@ -1246,6 +1261,10 @@ header .header__social a:hover {
 	padding-left: 28px;
 	background: url(../image/telephone.svg) no-repeat left center;
 	background-size: 18px auto;
+}
+
+.footer__contacts .tel span {
+	color: #ddd;
 }
 
 .footer__contacts .mail {
