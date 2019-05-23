@@ -971,6 +971,9 @@ header .header__social a:hover {
 	-ms-flex-align: center;
 	align-items: center;
 	padding-bottom: 25px;
+	opacity: 0;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .feature .num {
