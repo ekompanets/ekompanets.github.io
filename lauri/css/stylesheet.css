@@ -429,6 +429,7 @@ header {
 	text-align: left;
 	background: #fff;
 	z-index: 100;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.03);
 }
 
 header .header__wrapper {
@@ -653,20 +654,18 @@ header .header__social a:hover {
 .nav-button .icon span {
 	margin: 6px 0 0 15px;
 	transition: 0.5s;
-	box-shadow: 0 0 1px 1px #000000;
+	background: #000;
 }
 
 .nav-button .icon span:nth-child(1),
 .nav-button .icon span:nth-child(3) {
 	display: block;
-	background: #fff;
 	width: 30px;
 	height: 2px;
 }
 
 .nav-button .icon span:nth-child(2) {
 	display: block;
-	background: #fff;
 	width: 20px;
 	height: 2px;
 }
@@ -807,7 +806,7 @@ header .header__social a:hover {
 
 .promo-wrapper {
 	position: relative;
-	padding: 45px 90px 75px;
+	padding: 45px 90px 45px;
 	padding-right: 70px;
 	margin-left: 97px;
 }
@@ -963,6 +962,10 @@ header .header__social a:hover {
 
 .feature {
 	padding-bottom: 25px;
+}
+
+.feature:last-child {
+	padding-bottom: 0;
 }
 
 .feature > .block-flex {
@@ -1188,7 +1191,7 @@ header .header__social a:hover {
 	display: none;
 }
 
-.projects:hover .project .project__bg {
+.projects:hover .project:not(:hover) .project__bg {
 	opacity: 0;
 	transition: all .3s;
 }
@@ -1398,7 +1401,7 @@ header .header__wrapper {
 .menu__item > a {
 	font-size: 18px;
 	line-height: 22px;
-	color: #fff;
+	color: #272727;
 	border-bottom: 1px solid #767e86;
 }
 
@@ -1433,9 +1436,8 @@ header .header__wrapper {
 	width: 100%;
 	padding: 10px;
 	transition: 0.5s;
-	background: #262626;
+	background: #fff;
 	z-index: 100;
-	opacity: .95;
 	padding-top: 50px;
 }
 
