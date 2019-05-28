@@ -442,7 +442,7 @@ header .header__wrapper.top-scrolled {
 }
 
 header .header__wrapper.scrolled {
-	height: 75px;
+	height: 80px;
 	transition: all .5s;
 }
 
@@ -1598,6 +1598,10 @@ header .header__phone {
 
 header {
 	top: 0;
+}
+
+header .header__wrapper.top-scrolled {
+	height: 80px;
 }
 
 header .header__wrapper {
