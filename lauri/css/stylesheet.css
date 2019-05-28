@@ -1606,7 +1606,12 @@ header .header__wrapper.top-scrolled {
 
 header .header__wrapper {
 	padding-left: 15px;
-	padding-right: 90px;
+	padding-right: 120px;
+}
+
+header .header__phone {
+	font-size: 0;
+	background-size: 30px;
 }
 
 .nav-button {
