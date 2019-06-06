@@ -484,6 +484,7 @@ header .header__social a:hover {
 .logo img {
 	max-width: 185px;
 	max-height: 100%;
+	width: 150px;
 }
 
 .menu {
@@ -1415,6 +1416,7 @@ header .header__wrapper {
 
 .logo img {
 	max-width: 120px;
+	width: 120px;
 }
 
 .logo {
@@ -1665,8 +1667,8 @@ header .header__phone {
 }
 
 .banner-wrapper .img-animated img {
-	height: 100%;
-	max-height: 100%;
+	min-height: 100%;
+	min-width: 100%;
 }
 
 .content-wrapper {
