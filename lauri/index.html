@@ -65,7 +65,16 @@
 	<div class="banner-wrapper">
 		<div class="video-wrapper">
 			<!-- <img src="image/banner.jpg" alt=""> -->
-			<video autoplay="" class="video-frame wide-height" id="video-frame" loop="" muted="muted"><source src="video/lauri.mp4" type="video/mp4"></video>
+			<video autoplay="" class="video-frame wide-height" id="video-frame" loop="" muted="muted">
+				<source src="video/video.mp4" type="video/mp4">
+				<source src="video/video.ogv" type="video/ogg">
+				<source src="video/video.webm" type="video/webm">
+
+				</video>
+
+			<div class="img-animated">
+				<img src="image/proj2.jpg" alt="">
+			</div>
 		</div>
 		<div class="scroll-link">
 			<a href="#secondScreen">LInk</a>
@@ -334,6 +343,44 @@
 <script>
 	$(document).ready(function () {
 
+		if ($(window).width() < 768) {
+	      animate_loop = function (el, pos) {
+	          el.animate({
+	              'left': pos
+	          }, 10000).animate({
+	              'left': '0px'
+	          }, 10000 ,function() {animate_loop(el, pos);});
+	      }
+
+	      var elAnim = $('.video-wrapper .img-animated');
+	      var posLeft = $(window).width()  - elAnim.width();
+
+	      if (posLeft > 0) {posLeft = -posLeft}
+	      animate_loop(elAnim, posLeft);
+	  }
+
+
+		$(window).on('resize',function () {
+
+			if ($(window).width() < 768) {
+	      animate_loop = function (el, pos) {
+	          el.animate({
+	              'left': pos
+	          }, 10000).animate({
+	              'left': '0px'
+	          }, 10000 ,function() {animate_loop(el, pos);});
+	      }
+
+	      var elAnim = $('.video-wrapper .img-animated');
+	      var posLeft = $(window).width()  - elAnim.width();
+
+	      if (posLeft > 0) {posLeft = -posLeft}
+	      animate_loop(elAnim, posLeft);
+	  }
+
+  })
+
+
 
 			$('.project__bg, .bg').each(function() {
 
@@ -350,6 +397,7 @@
 			    
 			      }
 			  });
+
 
 			// $('.bg').each(function() {
 
