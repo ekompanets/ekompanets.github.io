@@ -1329,6 +1329,7 @@ header .header__social a:hover {
 	display: none;
 	font-size: 10px;
 	text-transform: uppercase;
+	z-index: 10;
 }
 
 .animLeft:before {
