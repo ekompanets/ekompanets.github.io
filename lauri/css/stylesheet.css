@@ -1321,6 +1321,16 @@ header .header__social a:hover {
 	font-size: 18px;
 }
 
+.contact-us-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 15px;
+	padding: 6px 12px;
+	display: none;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
 .animLeft:before {
 	animation-name: animLeftBefore;
 	animation-duration: 1.5s;
@@ -1739,6 +1749,10 @@ header .header__phone {
 
 .footer__logo {
 	margin-bottom: 30px;
+}
+
+.contact-us-btn {
+	display: block;
 }
 
 }
