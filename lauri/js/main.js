@@ -42,6 +42,13 @@
     } else {
       $('.header__wrapper').removeClass('scrolled')
       $('.header__wrapper').addClass('top-scrolled')
+    }
+
+    if ($(window).scrollTop() > 300) {
+      $('.contact-us-btn').addClass('fixed')
+
+    } else {
+      $('.contact-us-btn').removeClass('fixed')
 
     }
 
