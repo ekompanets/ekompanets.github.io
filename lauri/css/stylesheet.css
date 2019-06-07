@@ -1394,22 +1394,6 @@ header .header__social a:hover {
 
 }
 
-@media screen and (max-width: 1365px) {
-
-.promo-bg {
-	overflow: hidden;
-}
-
-.promo-bg:before {
-	display: none;
-}
-
-.promo-bg:after {
-	display: none;
-}
-
-}
-
 @media screen and (max-width: 1240px) {
 
 }
@@ -1559,6 +1543,18 @@ header .header__phone {
 	flex-direction: column;
 	-ms-flex-align: start;
 	align-items: flex-start;
+}
+
+.promo-bg {
+	overflow: hidden;
+}
+
+.promo-bg:before {
+	display: none;
+}
+
+.promo-bg:after {
+	display: none;
 }
 
 .number-block {
