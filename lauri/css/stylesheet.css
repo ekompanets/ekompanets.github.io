@@ -1199,7 +1199,8 @@ header .header__social a:hover {
 	left: 50%;
 	top: 0;
 	bottom: 0;
-	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-left: 1px solid rgba(255, 255, 255, 0.21);
+	z-index: 10;
 }
 
 .projects-bg {
@@ -1268,6 +1269,7 @@ header .header__social a:hover {
 
 .footer__logo img {
 	margin-right: 25px;
+	max-width: 45px;
 }
 
 .footer__logo p {
