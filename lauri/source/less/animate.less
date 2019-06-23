@@ -1,0 +1,131 @@
+
+
+@keyframes animLeftBefore {
+  from {
+      top: 50%;
+      bottom: 50%;
+      width: 0;
+  }
+
+  66% {
+    top: 0%;
+    bottom: 50%;
+    width: 0;
+  }
+
+  to {    
+    width: 22px;
+  }
+}
+
+.animLeft:before {
+  -webkit-animation-name: animLeftBefore;
+  animation-name: animLeftBefore;
+  animation-duration: 1.5s;
+}
+
+@keyframes animLeftAfter {
+  from {
+      top: 50%;
+      bottom: 50%;
+  }
+
+  to {
+      top: 50%;
+      bottom: 0%;
+  }
+}
+
+.animLeft:after {
+  -webkit-animation-name: animLeftAfter;
+  animation-name: animLeftAfter;
+  animation-duration: 1s;
+}
+
+
+@charset "UTF-8";
+
+@-webkit-keyframes animLeftTop {
+  from {
+      top: 50%;
+      bottom: 50%;
+      width: 0;
+  }
+
+  66% {
+    top: 0%;
+    bottom: 50%;
+    width: 0;
+  }
+
+  to {    
+    width: 22px;
+  }
+}
+
+@keyframes animLeftTop {
+  from {
+      top: 50%;
+      bottom: 50%;
+      width: 0;
+  }
+
+  66% {
+    top: 0%;
+    bottom: 50%;
+    width: 0;
+  }
+
+  to {    
+    width: 22px;
+  }
+}
+
+.animLeftTop {
+  -webkit-animation-name: animLeftTop;
+  animation-name: animLeftTop;
+  animation-duration: 3s;
+}
+
+@keyframes animLeftBottom {
+  from {
+      top: 50%;
+      bottom: 50%;
+  }
+
+  to {
+      top: 50%;
+      bottom: 0%;
+  }
+}
+
+.animLeftBottom {
+  -webkit-animation-name: animLeftBottom;
+  animation-name: animLeftBottom;
+  animation-duration: 2s;
+}
+
+
+@-webkit-keyframes dash-round {
+
+from {
+  stroke-dashoffset: 1000;
+}
+
+to {
+  stroke-dashoffset: 0;
+}
+
+}
+
+@keyframes dash-round {
+
+from {
+  stroke-dashoffset: 1000;
+}
+
+to {
+  stroke-dashoffset: 0;
+}
+
+}
