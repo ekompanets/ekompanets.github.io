@@ -638,12 +638,12 @@ header .header__social a:hover {
 	padding: 10px 15px;
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	font-size: 15px;
-	font-weight: normal;
+	font-size: 14px;
+	font-weight: 600;
 	line-height: 22px;
-	letter-spacing: 1.5px;
+	letter-spacing: 3.5px;
 	transition: all 1s;
-	text-transform: none;
+	text-transform: uppercase;
 }
 
 .menu__item > a:before {
