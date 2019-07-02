@@ -84,26 +84,34 @@
 	<div class="main-wrapper">
 	<div class="banner-wrapper">
 		<div class="banner">
-			<div class="banner-item img-anim animated infinite">
-				<img src="image/bg1.jpg" alt="">
+			<div class="banner-item">
+				<div class="banner-inner img-anim animated infinite">
+					<img src="image/bg1.jpg" alt="">
+				</div>
 				<div class="banner-text">
 					<p><span>Барбер</span> &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint deleniti adipisci rerum saepe aut ipsum incidunt magnam nihil harum magni architecto, itaque vitae velit eos eaque excepturi. Beatae unde, nulla.</p>
 				</div>
 			</div>
-			<div class="banner-item img-anim animated infinite">
-				<img src="image/bg2.jpg" alt="">
+			<div class="banner-item">
+				<div class="banner-inner img-anim animated infinite">
+					<img src="image/bg2.jpg" alt="">
+				</div>
 				<div class="banner-text">
 					<p><span>Барбер</span> &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magni, corporis esse quia! Quas, cum pariatur perferendis sapiente praesentium ex dicta eligendi amet ad assumenda atque quae porro qui tempore?</p>
 				</div>
 			</div>
-			<div class="banner-item img-anim animated infinite">
-				<img src="image/bg1.jpg" alt="">
+			<div class="banner-item">
+				<div class="banner-inner img-anim animated infinite">
+					<img src="image/bg1.jpg" alt="">
+				</div>
 				<div class="banner-text">
 					<p><span>Барбер</span> &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nisi, reiciendis, laboriosam neque nobis deleniti ab tenetur molestiae maxime id quaerat consequatur fugiat aliquam laborum nam aliquid vero qui. Eos?</p>
 				</div>
 			</div>
-			<div class="banner-item img-anim animated infinite">
-				<img src="image/bg2.jpg" alt="">
+			<div class="banner-item">
+				<div class="banner-inner img-anim animated infinite">
+					<img src="image/bg2.jpg" alt="">
+				</div>
 				<div class="banner-text">
 					<p><span>Барбер</span> &mdash; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolores eveniet eligendi et nobis neque minus mollitia sit repudiandae ad repellendus recusandae blanditiis praesentium, vitae ab sint earum, voluptate velit.</p>
 				</div>
@@ -170,20 +178,28 @@
 			<div class="section__title">Викладачі</div>
 			<div class="teachers__slider">
 				<div class="item">
-					<img src="image/teacher1.jpg" alt="">
-					<div class="item__name">Сергій Ткачов</div>
+					<div class="img-block">
+						<img src="image/teacher1.jpg" alt="">
+						<div class="item__name">Сергій Ткачов</div>
+					</div>
 				</div>
 				<div class="item">
-					<img src="image/teacher2.jpg" alt="">
-					<div class="item__name">Владлен Єфіменко</div>
+					<div class="img-block">
+						<img src="image/teacher2.jpg" alt="">
+						<div class="item__name">Владлен Єфіменко</div>
+					</div>
 				</div>
 				<div class="item">
-					<img src="image/teacher3.jpg" alt="">
-					<div class="item__name">Максим Пузанов</div>
+					<div class="img-block">
+						<img src="image/teacher3.jpg" alt="">
+						<div class="item__name">Максим Пузанов</div>
+					</div>
 				</div>
 				<div class="item">
-					<img src="image/teacher1.jpg" alt="">
-					<div class="item__name">Сергій Ткачов</div>
+					<div class="img-block">
+						<img src="image/teacher1.jpg" alt="">
+						<div class="item__name">Сергій Ткачов</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -257,7 +273,7 @@
 			          $(this).css({'background-color':'#fff'});
 			      }
 			      else{
-			          $(this).css({'background-image':'url(' + section + ')'});
+			          $(this).find('.banner-inner').css({'background-image':'url(' + section + ')'});
 			      }
 			// End of replace background by img in .page-section--slide
 			});
@@ -271,7 +287,7 @@
 				autoplaySpeed: 3000,
   			cssEase: 'ease ',
 			  adaptiveHeight: true,
-			  pouseOnHover: false
+			  pauseOnHover: false
 			});
 
 			
@@ -284,9 +300,16 @@
         slidesToScroll: 1,
 			  responsive: [
 				  {
-				  	breakpoint: 767,
+				  	breakpoint: 1023,
 				  	settings: {
 			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+				  },
+				  {
+				  	breakpoint: 767,
+				  	settings: {
+			        slidesToShow: 1,
 			        slidesToScroll: 1
 			      }
 				  }
@@ -307,7 +330,7 @@
 			          $(this).css({'background-color':'#fff'});
 			      }
 			      else{
-			          $(this).css({'background-image':'url(' + section + ')'});
+			          $(this).find('.banner-inner').css({'background-image':'url(' + section + ')'});
 			      }
 					});
 				}
