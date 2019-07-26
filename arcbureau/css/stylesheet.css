@@ -1324,6 +1324,7 @@ section {
 
 .fadeIn {
 	animation-name: fadeIn;
+	animation-duration: 4s;
 }
 
 #map {
