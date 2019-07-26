@@ -1322,6 +1322,10 @@ section {
 	animation-name: lined;
 }
 
+.fadeIn {
+	animation-name: fadeIn;
+}
+
 #map {
 	width: 550px;
 	max-width: 100%;
@@ -1850,6 +1854,18 @@ from {
 to {
 	left: 0;
 	right: 0;
+}
+
+}
+
+@keyframes fadeIn {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
 }
 
 }
