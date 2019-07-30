@@ -1283,7 +1283,10 @@ section {
 
 .project img {
 	max-width: 100%;
-	opacity: 0.25;
+	/*opacity: 0.25;*/
+	-webkit-filter: grayscale(.6);
+	-o-filter: grayscale(.6);
+	filter: grayscale(.6);
 	transition: all .3s;
 }
 
@@ -1292,7 +1295,9 @@ section {
 }
 
 .project:hover img {
-	opacity: 1;
+	-webkit-filter: none;
+	-o-filter: none;
+	filter: none;
 }
 
 .pulse {
