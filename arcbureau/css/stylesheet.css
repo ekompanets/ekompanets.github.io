@@ -1255,6 +1255,15 @@ section {
 .project {
 	width: 25%;
 	padding: 1px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.project__img {
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 }
 
 .projects {
@@ -1266,6 +1275,8 @@ section {
 }
 
 .projects__wrapper {
+	-ms-flex-align: stretch;
+	align-items: stretch;
 	padding: 25px 0 0;
 }
 
@@ -1288,6 +1299,7 @@ section {
 
 .project img {
 	max-width: 100%;
+	min-height: 100%;
 	filter: grayscale(0.6);
 	transition: all .3s;
 }
