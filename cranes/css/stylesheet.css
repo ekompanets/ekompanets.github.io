@@ -1626,6 +1626,11 @@ section.about-us p {
 	border-top: 1px solid #000;
 }
 
+.footer > .container {
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
 .footer a,
 .footer span {
 	display: block;
@@ -1699,11 +1704,13 @@ section.about-us p {
 }
 
 .footer .contact-block {
+	margin-top: 0;
 	color: #fff;
 }
 
 .footer .contact-block .phone {
 	color: #fff;
+	margin-left: 0;
 }
 
 .footer .contact-block .adr a {
