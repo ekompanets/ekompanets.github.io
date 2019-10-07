@@ -1089,7 +1089,7 @@ section.about-us p {
 	text-transform: uppercase;
 	color: #000;
 	font-size: 55px;
-	line-height: 45px;
+	line-height: 40px;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: bold;
 	text-align: left;
@@ -1106,7 +1106,7 @@ section.about-us p {
 .section-title i:before {
 	position: absolute;
 	content: '';
-	height: 1px;
+	height: 2px;
 	left: 5px;
 	right: 5px;
 	background: #ff9818;
@@ -1385,7 +1385,7 @@ section.about-us p {
 	display: none;
 }
 
-.projects__wrapper .container {
+.projects__wrapper > .block-flex {
 	-ms-flex-align: stretch;
 	align-items: stretch;
 }
@@ -1405,8 +1405,9 @@ section.about-us p {
 }
 
 .project__text {
-	font-size: 13px;
+	font-size: 12px;
 	color: #fff;
+	line-height: 20px;
 }
 
 .project__icon {
@@ -1420,13 +1421,14 @@ section.about-us p {
 
 .feature {
 	height: 300px;
+	max-width: 260px;
 	margin: 0 20px;
 	padding: 50px 40px 10px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 22px;
 	color: #000;
-	border-radius: 0 0 16px 16px;
+	border-radius: 16px;
 	box-shadow: 0 20px 15px rgba(0, 0, 0, 0.15);
 	background: #fff;
 }
@@ -1494,6 +1496,12 @@ section.about-us p {
 	background-size: 20px auto;
 }
 
+.contact-block.address {
+	padding-left: 45px;
+	background: url(../image/maps-and-flags.svg) no-repeat left center;
+	background-size: 20px auto;
+}
+
 .contact-block.mail > a {
 	display: block;
 	margin-bottom: 10px;
@@ -1505,6 +1513,7 @@ section.about-us p {
 .contact-block.mail .social a {
 	font-size: 22px;
 	color: #ff9818;
+	text-align: left;
 }
 
 .contact-block .title {
@@ -1548,6 +1557,12 @@ section.about-us p {
 	height: 100vh;
 	max-height: 400px;
 	background: transparent;
+	z-index: 0;
+}
+
+.parallax-window + .container {
+	position: relative;
+	z-index: 1;
 }
 
 .parallax-mirror {
@@ -1787,7 +1802,7 @@ section.about-us p {
 
 @media screen and (min-width: 1600px) {
 
-.projects__wrapper .container {
+.projects__wrapper > .block-flex {
 	max-width: 1600px !important;
 }
 
