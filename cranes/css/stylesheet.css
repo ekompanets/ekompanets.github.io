@@ -1550,6 +1550,10 @@ section.about-us p {
 	background: transparent;
 }
 
+.parallax-mirror {
+	overflow: visible !important;
+}
+
 #map {
 	width: 550px;
 	max-width: 100%;
