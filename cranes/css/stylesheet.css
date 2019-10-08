@@ -565,7 +565,7 @@ header {
 	width: 100%;
 	min-width: 320px;
 	text-align: left;
-	background: transparent;
+	background: #fff;
 	z-index: 100;
 }
 
@@ -1554,8 +1554,8 @@ section.about-us p {
 	position: absolute;
 	width: 99%;
 	right: 0;
-	height: 100vh;
-	max-height: 400px;
+	height: 200vh;
+	max-height: 150vh;
 	background: transparent;
 	z-index: 0;
 }
@@ -1567,6 +1567,7 @@ section.about-us p {
 
 .parallax-mirror {
 	overflow: visible !important;
+	visibility: visible !important;
 }
 
 #map {
