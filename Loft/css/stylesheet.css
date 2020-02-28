@@ -564,6 +564,11 @@ form .input-field textarea {
 	font-size: 14px;
 }
 
+form .input-field input:focus,
+form .input-field textarea:focus {
+	border-bottom-color: #232323;
+}
+
 form .input-field textarea {
 	resize: none;
 }
