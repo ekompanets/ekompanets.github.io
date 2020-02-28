@@ -1521,7 +1521,7 @@ header {
 }
 
 header .header__wrapper {
-	padding-left: 15px;
+	padding: 15px;
 	padding-right: 90px;
 }
 
