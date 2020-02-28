@@ -392,7 +392,7 @@ a:hover {
 
 .btn:hover {
 	opacity: .85;
-	color: #fff;
+	color: #535353;
 	transition: all .3s;
 }
 
@@ -849,48 +849,6 @@ header .header__social a:hover {
 	transform: translateY(-8px) rotate(-45deg);
 }
 
-.scroll-link {
-	position: absolute;
-	left: 50%;
-	bottom: 25px;
-	-ms-transform: translate(-50%);
-	transform: translate(-50%);
-}
-
-.scroll-link a {
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: end;
-	align-items: flex-end;
-	-ms-flex-pack: center;
-	justify-content: center;
-	font-size: 10px;
-	width: 60px;
-	height: 77px;
-	color: #4f4e4e;
-	text-align: center;
-}
-
-.scroll-link a:before {
-	position: absolute;
-	content: '';
-	width: 1px;
-	height: 40px;
-	left: 50%;
-	top: 0;
-	background: #4f4e4e;
-}
-
-.scroll-link a:hover {
-	color: #fff;
-	text-decoration: none;
-}
-
-.scroll-link a:hover:before {
-	background: #fff;
-}
-
 /*
 ================================================================================
 |                                     CONTENT                                 |
@@ -913,6 +871,48 @@ header .header__social a:hover {
 	padding-top: 0px;
 	height: 100vh;
 	overflow: hidden;
+}
+
+.banner-wrapper .scroll-link {
+	position: absolute;
+	left: 50%;
+	bottom: 25px;
+	-ms-transform: translate(-50%);
+	transform: translate(-50%);
+}
+
+.banner-wrapper .scroll-link a {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-size: 10px;
+	width: 60px;
+	height: 77px;
+	color: #4f4e4e;
+	text-align: center;
+}
+
+.banner-wrapper .scroll-link a:before {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 40px;
+	left: 50%;
+	top: 0;
+	background: #4f4e4e;
+}
+
+.banner-wrapper .scroll-link a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.banner-wrapper .scroll-link a:hover:before {
+	background: #fff;
 }
 
 .banner-item {
