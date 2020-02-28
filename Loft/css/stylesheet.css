@@ -904,6 +904,7 @@ header .header__social a:hover {
 	left: 50%;
 	top: 0;
 	background: #4f4e4e;
+	transition: all .3s;
 }
 
 .banner-wrapper .scroll-link a:hover {
@@ -913,6 +914,8 @@ header .header__social a:hover {
 
 .banner-wrapper .scroll-link a:hover:before {
 	background: #fff;
+	-ms-transform: scale(1.8);
+	transform: scale(1.8);
 }
 
 .banner-item {
