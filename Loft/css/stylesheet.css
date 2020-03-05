@@ -1771,6 +1771,14 @@ header .header__wrapper {
 
 }
 
+@media screen and (max-width: 470px) {
+
+.banner-item .banner-title {
+	font-size: 24px;
+}
+
+}
+
 @keyframes nextPage {
 
 0% {
