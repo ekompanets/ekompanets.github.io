@@ -37,6 +37,14 @@
         $('.menu').removeClass('show')
     });
 
+    $('.input-wrap input, .input-wrap textarea').on('focus', function() {
+      $(this).parent().addClass('focus')
+    })
+
+    $('.input-wrap input, .input-wrap textarea').on('blur', function() {
+      $(this).parent().removeClass('focus')
+    })
+
     $(window).on('resize', function () {
       getOrientation();
 
