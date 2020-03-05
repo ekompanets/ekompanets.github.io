@@ -224,7 +224,7 @@ $(document).ready(function() {
 
   if ($(window).width() <= 1200) {
     $('[data-wow-delay]').each(function() {
-      $(this).attr('data-wow-delay', '0s');
+      // $(this).attr('data-wow-delay', '0s');
     });
 
     $('[data-split-letters]').each(function() {
