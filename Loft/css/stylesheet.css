@@ -1507,6 +1507,12 @@ header .header__wrapper {
 	padding-left: 0;
 }
 
+.lang {
+	width: 100%;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
 .menu__item {
 	display: block;
 	padding: 0 60px;
@@ -1632,6 +1638,10 @@ header .header__wrapper {
 	display: -ms-flexbox;
 	display: flex;
 	z-index: 101;
+}
+
+.contacts__item {
+	visibility: visible !important;
 }
 
 }
