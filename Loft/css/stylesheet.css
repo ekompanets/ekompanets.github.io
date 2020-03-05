@@ -1159,11 +1159,43 @@ header .header__social a:hover {
 	transform-style: preserve-3d;
 }
 
+.why__img:before {
+	position: absolute;
+	content: '';
+	display: block;
+	top: 30px;
+	left: 30px;
+	width: 48px;
+	height: 48px;
+	border: 4px solid #e8e8e8;
+	z-index: 0;
+	transform: translateZ(-20px);
+	transition: all 1s;
+}
+
 .why__img img {
 	position: relative;
 	height: 62px;
+	width: 62px;
 	margin-right: 40px;
 	z-index: 1;
+}
+
+.why__img .why__svg {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 48px;
+	height: 48px;
+}
+
+.why__img .why__shape {
+	stroke-dasharray: 200;
+	stroke-dashoffset: 200;
+	stroke-width: 8px;
+	fill: transparent;
+	stroke: #e8e8e8;
+	animation: dash-round-square 2.2s linear forwards;
 }
 
 .why-item {
@@ -1799,6 +1831,18 @@ to {
 
 from {
 	stroke-dashoffset: 1000;
+}
+
+to {
+	stroke-dashoffset: 0;
+}
+
+}
+
+@keyframes dash-round-square {
+
+from {
+	stroke-dashoffset: 200;
 }
 
 to {
