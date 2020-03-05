@@ -764,7 +764,7 @@ header .header__social a:hover {
 .menu__item > a {
 	position: relative;
 	display: block;
-	padding: 20px 0px;
+	padding: 20px 15px;
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 	font-size: 17px;
@@ -1537,6 +1537,10 @@ header .header__wrapper {
 
 .menu__item:nth-child(5) {
 	transition-delay: 0.4s;
+}
+
+.menu__item > a {
+	padding: 20px 0;
 }
 
 .menu__item > a {
