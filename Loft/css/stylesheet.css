@@ -1771,7 +1771,7 @@ header .header__wrapper {
 
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 370px) {
 
 .banner-item .banner-title {
 	font-size: 24px;
