@@ -569,6 +569,8 @@ input[type=number] {
 form .input-field {
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
 	margin-bottom: 45px;
 }
 
@@ -586,38 +588,32 @@ form .input-field label {
 form .input-field .input-wrap {
 	position: relative;
 	width: 100%;
+	border-bottom: 2px solid #e9e9e9;
 }
 
-form .input-field .input-wrap .input__svg {
+form .input-field .input-wrap:before {
 	position: absolute;
-	bottom: 0;
+	content: '';
+	width: 6px;
+	height: 2px;
 	left: 0;
+	bottom: -2px;
+	background: #272727;
+	transition: all 1.5s;
 }
 
-form .input-field .input-wrap .input__line {
-	display: block;
-	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
-	stroke-width: 2px;
-	fill: transparent;
-	stroke: #d6d6d6;
-	animation: dash-round 2.2s linear forwards;
+form .input-field .input-wrap.focus:before {
+	width: 100%;
 }
 
 form .input-field input,
 form .input-field textarea {
 	width: 100%;
 	border: none;
-	border-bottom: 1px solid #d6d6d6;
 	box-shadow: none;
 	outline: none !important;
-	line-height: 20px;
+	line-height: 30px;
 	font-size: 14px;
-}
-
-form .input-field input:focus,
-form .input-field textarea:focus {
-	border-bottom-color: #232323;
 }
 
 form .input-field textarea {
