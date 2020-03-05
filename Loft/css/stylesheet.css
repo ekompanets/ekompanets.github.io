@@ -1747,6 +1747,10 @@ header .header__wrapper {
 	padding-right: 0;
 }
 
+.contact__inner form .btn {
+	display: block;
+}
+
 .contacts {
 	width: 100%;
 	padding-left: 0;
